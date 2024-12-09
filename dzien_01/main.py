@@ -100,6 +100,7 @@
 # print(zmienna, type(zmienna))
 
 
+
 #### ZADANIE 1
 
 # Napisz program, który pobierze od użytkownika imię i nazwisko (osobno),
