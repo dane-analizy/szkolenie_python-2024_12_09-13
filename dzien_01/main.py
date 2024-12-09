@@ -342,3 +342,27 @@
 #             wynik = x * y
 # if wynik < 69:
 #     print(f"{x=} x {y=} = {wynik}")
+
+
+# # przypisanie wielu zmiennych na raz
+# a, b, c = 1, 2, 3
+
+# # zamiana wartości zmiennych
+# a = 1
+# b = 2
+
+# #  "tradycyjnie:"
+# t = a
+# a = b
+# b = t
+
+# # pythonowo:
+# a, b = b, a
+
+
+# # wynik
+# a = 2
+# b = 1
+
+
+
