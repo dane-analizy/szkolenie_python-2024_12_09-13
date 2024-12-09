@@ -92,3 +92,10 @@
 
 # zmienna_float = float(zmienna_str)
 # print(zmienna_float, type(zmienna_float))
+
+
+
+# pobranie czegoś od użytkownika
+
+zmienna = input("zapytanie: ")
+print(zmienna, type(zmienna))
