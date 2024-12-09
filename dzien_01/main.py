@@ -64,3 +64,31 @@
 # print("wynik działania:", wynik, type(wynik))
 
 # print("="*80)
+
+# zmienna: int = 123.56
+# print(type(zmienna))
+# zmienna = "abc"
+# print(type(zmienna))
+
+# rzutowanie typów = casting
+
+# zmienna_int = 1234
+# print(zmienna_int, type(zmienna_int))
+
+# zmienna_str = str(zmienna_int)
+# print(zmienna_str, type(zmienna_str))
+
+# zmienna_float = float(zmienna_int)
+# print(zmienna_float, type(zmienna_float))
+
+# zmienna_str = "12345"
+# print(zmienna_str, type(zmienna_str))
+
+# zmienna_int = int(zmienna_str)
+# print(zmienna_int, type(zmienna_int))
+
+# zmienna_str = "-123.45"
+# print(zmienna_str, type(zmienna_str))
+
+# zmienna_float = float(zmienna_str)
+# print(zmienna_float, type(zmienna_float))
