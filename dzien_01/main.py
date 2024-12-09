@@ -434,3 +434,9 @@
 
 # Dla kolejnych liczb od -5 do 5 włącznie wyświetl wynik dzielenia 1 przez liczbę.
 # Jeśli trzeba to opuść jakąś liczbę.
+
+# for i in range(-5, 6):
+#     if i == 0:
+#         print(f"opuszczam {i=}")
+#         continue
+#     print(1/i)
