@@ -151,3 +151,15 @@
 # Napisz program, który pobierze od użytkownika masę i wzrost,
 # a następnie policzy BMI i wypisze wynik na konsolę.
 # Uwaga - przy pobieraniu danych napisz w jakich jednostkach mają być podane.
+
+
+weigth = input("Podaj Twoja mase [kg]: ")
+height = input("Podaj Twoj wzrost [cm]: ")
+
+bmi = float(weigth) / (float(height) / 100) ** 2
+print(f"Twoje BMI to: {bmi}")
+
+bmi_round = round(bmi, 2)
+print(f"Twoje BMI to: {bmi_round}")
+
+print(f"Twoje BMI to: {bmi:.3f}")
