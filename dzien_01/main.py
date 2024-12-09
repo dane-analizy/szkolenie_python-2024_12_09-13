@@ -468,3 +468,9 @@
 # To co wpisze użytkownik - wypisujemy na ekranie.
 # Ale jeśli użytkownika wpisze słowo "stop" - kończymy program, dziękując za współpracę.
 
+slowo = None
+while slowo != "stop":
+    slowo = input("podaj jakieś słowo: ")
+    print(slowo)
+
+print("po pętli")
