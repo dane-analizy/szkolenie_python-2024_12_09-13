@@ -157,6 +157,7 @@ weigth = input("Podaj Twoja mase [kg]: ")
 height = input("Podaj Twoj wzrost [cm]: ")
 
 bmi = float(weigth) / (float(height) / 100) ** 2
+
 print(f"Twoje BMI to: {bmi}")
 
 bmi_round = round(bmi, 2)
