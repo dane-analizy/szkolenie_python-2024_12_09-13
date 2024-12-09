@@ -3,3 +3,5 @@ class NapisNaEkranie {
         System.out.println("Ala ma kota")
     }
 }
+
+toJestMojaZmienna
