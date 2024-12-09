@@ -164,3 +164,20 @@
 # print(f"Twoje BMI to: {bmi_round}")
 
 # print(f"Twoje BMI to: {bmi:.3f}")
+
+
+# instrukcje warunkowe
+
+# jeżeli warunek jest prawdziwy
+#     to wykonaj te czynności
+# inaczej
+#     wykonaj inne czynności
+
+zmienna = -10
+
+if zmienna > 0:
+    print(f"zmienna ma wartość {zmienna} i jest > 0")
+else:
+    print("zmienna jest mniejsza niż 0")
+
+print("Po ifie")
