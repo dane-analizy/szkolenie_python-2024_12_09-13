@@ -467,3 +467,4 @@
 # Napisz kod, który w nieskończoność będzie pytał użytkownika o kolejne słowa.
 # To co wpisze użytkownik - wypisujemy na ekranie.
 # Ale jeśli użytkownika wpisze słowo "stop" - kończymy program, dziękując za współpracę.
+
