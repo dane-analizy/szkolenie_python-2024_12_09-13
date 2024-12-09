@@ -130,9 +130,24 @@
 # Napisz program, który pobierze od użytkownika jego imię oraz rok urodzenia.
 # Potem wypisze w konsoli pozdrowienie "Witaj IMIĘ" oraz wiek użytkownika.
 
-BIEZACY_ROK = 2024
+# BIEZACY_ROK = 2024
 
-imie = input("Podaj swoje imię: ")
-rok_urodzenia = input("W którym roku się urodziłeś? ")
-wiek = BIEZACY_ROK - int(rok_urodzenia)
-print(f"Witaj {imie}, widzę że masz {wiek} lat")
+# imie = input("Podaj swoje imię: ")
+# rok_urodzenia = input("W którym roku się urodziłeś? ")
+# wiek = BIEZACY_ROK - int(rok_urodzenia)
+# print(f"Witaj {imie}, widzę że masz {wiek} lat")
+
+
+# definicja BMI: https://pl.wikipedia.org/wiki/Wska%C5%BAnik_masy_cia%C5%82a
+
+# bmi = masa w kg / (wzrost w m)^2
+
+# potęgowanie w Pythonie:
+# x^y => x**y
+# bmi = masa / wzrost**2
+
+#### ZADANIE 3
+
+# Napisz program, który pobierze od użytkownika masę i wzrost,
+# a następnie policzy BMI i wypisze wynik na konsolę.
+# Uwaga - przy pobieraniu danych napisz w jakich jednostkach mają być podane.
