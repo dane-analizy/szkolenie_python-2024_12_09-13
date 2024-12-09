@@ -94,13 +94,33 @@
 # print(zmienna_float, type(zmienna_float))
 
 
-
 # pobranie czegoś od użytkownika
 
 # zmienna = input("zapytanie: ")
 # print(zmienna, type(zmienna))
 
+
 #### ZADANIE 1
 
 # Napisz program, który pobierze od użytkownika imię i nazwisko (osobno),
 # a potem wypisze w konsoli pozdrowienie "Witaj IMIĘ NAZWISKO!"
+
+
+# a = "napis"
+# b = "inny"
+# c = b + a
+# print(c)
+# print(b, a)
+
+# zmienna_imie = input("Podaj imię: ")
+# zmienna_nazwisko = input("Podaj nazwisko: ")
+# # print("Witaj", zmienna_imie, zmienna_nazwisko, "!")
+# # print("Witaj " + zmienna_imie + " " + zmienna_nazwisko + "!")
+
+# # wstrzykiwanie zmiennych:
+# # wersja 1 - python do 3.6
+# # print("Witaj {} {}!".format(zmienna_imie, zmienna_nazwisko))
+
+# # wersja 2 - python od 3.7 -> f-string
+# print(f"Witaj {zmienna_imie} {zmienna_nazwisko}!")
+
