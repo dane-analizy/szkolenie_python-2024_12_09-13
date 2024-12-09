@@ -366,3 +366,12 @@
 
 
 
+#### ZADANIE 7
+
+# Napisz symulator lokaty Symulator ma przyjmować zmienne:
+# - początkowa kwotę lokaty
+# - oprocentowanie w skali roku
+# - ilość miesięcy na jaką zakładamy lokatę
+# Symulator ma dla każdego miesiąca lokaty wypisać który to miesiąc
+# oraz ile mamy aktualnie zgromadzone po doliczeniu odsetek. 
+# Zakładamy kapitalizację odsetek co miesiąc.
