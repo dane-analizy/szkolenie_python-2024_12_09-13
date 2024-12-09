@@ -468,9 +468,33 @@
 # To co wpisze użytkownik - wypisujemy na ekranie.
 # Ale jeśli użytkownika wpisze słowo "stop" - kończymy program, dziękując za współpracę.
 
-slowo = None
-while slowo != "stop":
+# slowo = None
+# while slowo != "stop":
+#     slowo = input("podaj jakieś słowo: ")
+#     print(slowo)
+
+# print("po pętli")
+
+
+
+# operacje na stringach
+
+# napis = "     abc  FGERE   --- Ala ma Kota     "
+# print(f"            |{napis}|")
+# print(f".upper      |{napis.upper()}|")
+# print(f".lower      |{napis.lower()}|")
+# print(f".capitalize |{napis.capitalize()}|")
+# print(f".title      |{napis.title()}|")
+# print(f".strip      |{napis.strip()}|")
+# print(f".lstrip     |{napis.lstrip()}|")
+# print(f".rstrip     |{napis.rstrip()}|")
+# print(f".replace    |{napis.replace('-', '!')}|")
+# print(f".count      |{napis.count('-')}|")
+
+# print(len(napis))
+# print(len(napis.strip()))
+
+slowo = ""
+while slowo.strip().lower() != "stop":
     slowo = input("podaj jakieś słowo: ")
     print(slowo)
-
-print("po pętli")
