@@ -489,12 +489,23 @@
 # print(f".lstrip     |{napis.lstrip()}|")
 # print(f".rstrip     |{napis.rstrip()}|")
 # print(f".replace    |{napis.replace('-', '!')}|")
+# print(f".replace    |{napis.replace('-', '[kreska]')}|")
+# print(f".replace    |{napis.replace('-', '')}|")
+# print(f".replace    |{napis.replace('--', '.')}|")
 # print(f".count      |{napis.count('-')}|")
 
 # print(len(napis))
 # print(len(napis.strip()))
 
-slowo = ""
-while slowo.strip().lower() != "stop":
-    slowo = input("podaj jakieś słowo: ")
-    print(slowo)
+# slowo = ""
+# while slowo.strip().lower() != "stop":
+#     slowo = input("podaj jakieś słowo: ")
+#     print(slowo)
+
+
+
+#### ZADANIE 10
+
+# Napisz program, który przyjmie od użytkownika ciąg tekstowy,
+# następnie usunie z niego znaki: ,.?! a następnie powiększony do dużych liter wynik wyświetli w konsoli.
+
