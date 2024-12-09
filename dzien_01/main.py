@@ -97,5 +97,10 @@
 
 # pobranie czegoś od użytkownika
 
-zmienna = input("zapytanie: ")
-print(zmienna, type(zmienna))
+# zmienna = input("zapytanie: ")
+# print(zmienna, type(zmienna))
+
+#### ZADANIE 1
+
+# Napisz program, który pobierze od użytkownika imię i nazwisko (osobno),
+# a potem wypisze w konsoli pozdrowienie "Witaj IMIĘ NAZWISKO!"
