@@ -316,3 +316,29 @@
 #### ZADANIE 6
 
 # Z tabliczki mnożenia 1..10 x 1..10 wyświetl tylko te wartości, które są mniejsze niż 69.
+
+# for x in range(1, 11):
+#     for y in range(1, 11):
+#         wynik = x*y
+#         if wynik < 69:
+#             print(f"{x=} x {y=} = {wynik}")
+
+
+# uwaga na wcięcia
+
+# for x in range(1, 11):
+#     if x % 2 == 0:
+#         for y in range(1, 11):
+#             wynik = x * y
+#             if wynik < 69:
+#                 print(f"{x=} x {y=} = {wynik}")
+
+
+# inna logika
+
+# for x in range(1, 11):
+#     if x % 2 == 0:
+#         for y in range(1, 11):
+#             wynik = x * y
+# if wynik < 69:
+#     print(f"{x=} x {y=} = {wynik}")
