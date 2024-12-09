@@ -305,3 +305,10 @@
 #     print(f"2 ^ {liczba} = {potega}")
 
 # iterable
+
+
+# for w forze
+
+for x in range(1, 11):
+    for y in range(1, 11):
+        print(f"{x=} x {y=} = {x*y}")
