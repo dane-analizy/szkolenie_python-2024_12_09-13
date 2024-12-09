@@ -197,17 +197,30 @@
 #     print(f"{liczba} nie jest parzysta")
 
 # if w ifie
-liczba = 13
-if liczba > 0:
-    if liczba % 2 == 0:
-        print(f"{liczba=} jest parzysta i dodatnia")
-        # fafaf
-        # afagag
-        # agagag
-    else:
-        print(f"{liczba} nie jest parzysta i dodatnia")
-    print("Skończyłem operacje z dodatnią liczbą")
-else:
-    pass # pass nic nie robi
+# liczba = 13
+# if liczba > 0:
+#     if liczba % 2 == 0:
+#         print(f"{liczba=} jest parzysta i dodatnia")
+#         # fafaf
+#         # afagag
+#         # agagag
+#     else:
+#         print(f"{liczba} nie jest parzysta i dodatnia")
+#     print("Skończyłem operacje z dodatnią liczbą")
+# else:
+#     pass  # pass nic nie robi
 
-print("Koniec programu")
+# print("Koniec programu")
+
+
+# konstrukcja elif
+
+liczba = 14
+if liczba % 3 == 0:
+    print(f"{liczba=} przy dzieleniu przez 3 nie zwraca reszty")
+elif liczba % 3 == 1:
+    print(f"{liczba=} przy dzieleniu przez 3 zwraca 1 reszty")
+elif liczba % 3 == 2:
+    print(f"{liczba=} przy dzieleniu przez 3 zwraca 2 reszty")
+else:
+    print("to jest zupełnie coś innego")
