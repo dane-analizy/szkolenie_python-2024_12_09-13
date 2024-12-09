@@ -365,7 +365,6 @@
 # b = 1
 
 
-
 #### ZADANIE 7
 
 # Napisz symulator lokaty Symulator ma przyjmować zmienne:
@@ -373,5 +372,58 @@
 # - oprocentowanie w skali roku
 # - ilość miesięcy na jaką zakładamy lokatę
 # Symulator ma dla każdego miesiąca lokaty wypisać który to miesiąc
-# oraz ile mamy aktualnie zgromadzone po doliczeniu odsetek. 
+# oraz ile mamy aktualnie zgromadzone po doliczeniu odsetek.
 # Zakładamy kapitalizację odsetek co miesiąc.
+
+# kwota = 100_000
+# oprocentowanie_roczne = 3
+# czas = 9
+# for m in range(czas):
+#     odsetki = kwota * ((oprocentowanie_roczne/100) / 12)
+#     kwota = kwota + odsetki
+#     print(f"miesiąc nr {m+1} na koncie mam {kwota:.2f}")
+
+
+# break i continue
+
+
+# break:
+
+# print("przed pętlą")
+# for i in range(1_000):
+#     print("w pętli", i)
+#     if i > 20:
+#         print("wykonuję break")
+#         break # przerwij całą pętlę
+# else:
+#     print("else do fora się wykonał")
+
+# print("po pętli")
+
+
+# print("przed pętlą")
+# for i in range(10):
+#     print("w pętli", i)
+#     if i > 20:
+#         print("wykonuję break")
+#         break  # przerwij całą pętlę
+# else:
+#     print("else do fora się wykonał")
+
+# print("po pętli")
+
+
+# continue:
+
+print("przed pętlą")
+
+for i in range(-10, 10):
+    print("w pętli", i)
+    if i == 0:
+        print("wykonuję continue")
+        continue # przerwij interację pętli i idź do kolejnej
+    print("w pętli po ifie")
+else:
+    print("else do fora się wykonał")
+
+print("po pętli")
