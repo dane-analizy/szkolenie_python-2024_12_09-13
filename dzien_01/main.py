@@ -226,8 +226,7 @@
 #     print("to jest zupełnie coś innego")
 
 
-
-#### ZADANIE 4 
+#### ZADANIE 4
 
 # Napisz program, który pobierze od użytkownika masę i wzrost, a następnie policzy BMI i wypisze na konsolę.
 # Dodatkowo - na podstawie wartości obliczonego BMI niech poda komentarz.
@@ -239,7 +238,6 @@
 # 30 - 34,999 => otyłość I stopnia
 # 35 - 39,999 => otyłość II stopnia (duża)
 # > 40 => otyłość III stopnia (chorobliwa)
-
 
 
 # weigth = input("Podaj Twoja mase [kg]: ")
@@ -268,8 +266,8 @@
 
 # if bmi > 12 and bmi < 40:
 #     # efuwrgh
-    
-    
+
+
 # True and True => True
 # False and True => False
 
@@ -288,17 +286,22 @@
 
 # for liczba in range(10):
 #     print(liczba)
-    
-    
+
+
 # for liczba in range(5, 10):
 #     print(liczba)
-  
-    
+
+
 # for liczba in range(5, 20, 3):
 #     print(liczba)
-
 
 
 #### ZADANIE 5
 
 # Wyświetl 20 kolejnych potęg liczby 2.
+
+# for liczba in range(20): # zaczynamy od 0, kończymy na 19 włącznie
+#     potega = 2**liczba
+#     print(f"2 ^ {liczba} = {potega}")
+
+# iterable
