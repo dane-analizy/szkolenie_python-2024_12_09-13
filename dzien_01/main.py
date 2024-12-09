@@ -509,3 +509,65 @@
 # Napisz program, który przyjmie od użytkownika ciąg tekstowy,
 # następnie usunie z niego znaki: ,.?! a następnie powiększony do dużych liter wynik wyświetli w konsoli.
 
+
+# rozwiązanie 1
+
+# napis = input("Wpis jakiś ciąg: ")
+
+# napis = napis.replace(".", "")
+# napis = napis.replace(",", "")
+# napis = napis.replace("!", "")
+# napis = napis.replace("?", "")
+
+# napis = napis.upper()
+
+# print(napis)
+
+
+
+# rozwiązanie 2
+# napis = input("Wpis jakiś ciąg: ")
+
+# napis = napis.replace(".", "").replace(",", "").replace("!", "").replace("?", "")
+# napis = napis.upper()
+
+# print(napis)
+
+
+
+# iterowanie znak po znaku przez cały napis
+# napis = "Ala ma kota"
+# for literka in napis: # litera po literce z całego napisu 
+#     print(literka)
+
+# rozwiązanie 3
+# napis = input("Wpis jakiś ciąg: ")
+# zakazane_znaki = ".,?!"
+
+# for zakazany_znak in zakazane_znaki:
+#     napis = napis.replace(zakazany_znak, "")
+
+# napis = napis.upper()
+# print(napis)
+
+
+
+# czy jeden ciąg znaków jest w drugim ciągu
+# if "Ala" in napis: # czy ciąg jest w innym ciągu
+#     print("Ala występuje w napisie")
+# else:
+#     print("No nie występuje")
+
+
+# rozwiązanie 4
+# napis = input("Wpis jakiś ciąg: ")
+# zakazane_znaki = ".,?!"
+
+# nowy_napis = ""
+
+# for znak_od_usera in napis:
+#     if znak_od_usera not in zakazane_znaki:
+#         nowy_napis = nowy_napis + znak_od_usera
+
+# nowy_napis = nowy_napis.upper()
+# print(nowy_napis)
