@@ -275,3 +275,30 @@
 
 # True or False => True
 # False or True => True
+
+
+# pętle
+
+
+# range() => zwraca kolejne liczby całkowite
+# range(start=0, stop=10, step=1)
+
+# for liczba in range(0, 10, 1):
+#     print(liczba)
+
+# for liczba in range(10):
+#     print(liczba)
+    
+    
+# for liczba in range(5, 10):
+#     print(liczba)
+  
+    
+# for liczba in range(5, 20, 3):
+#     print(liczba)
+
+
+
+#### ZADANIE 5
+
+# Wyświetl 20 kolejnych potęg liczby 2.
