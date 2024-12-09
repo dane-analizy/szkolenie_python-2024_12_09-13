@@ -242,7 +242,25 @@
 
 
 
-# weigth = input("Podaj Twoja mase [kg]: ")
-# height = input("Podaj Twoj wzrost [cm]: ")
+weigth = input("Podaj Twoja mase [kg]: ")
+height = input("Podaj Twoj wzrost [cm]: ")
+bmi = float(weigth) / (float(height) / 100) ** 2
+print(f"Twoje BMI to: {bmi}")
 
-# bmi = float(weigth) / (float(height) / 100) ** 2
+
+if bmi < 16:
+    print(f"{bmi=:.2f} oznacza  wygłodzenie")
+elif bmi <= 17:
+    print(f"{bmi=:.2f} oznacza  wychudzenie")
+elif bmi <= 18.5:
+    print(f"{bmi=:.2f} oznacza  niedowaga")
+elif  bmi <= 25:
+    print(f"{bmi=:.2f} oznacza  pożądana masa ciała")
+elif bmi <= 30:
+    print(f"{bmi=:.2f} oznacza  nadwaga")
+elif  bmi <= 35:
+    print(f"{bmi=:.2f} oznacza  otyłość I stopnia")
+elif bmi <= 40:
+    print(f"{bmi=:.2f} oznacza  otyłość II stopnia (duża)")
+else:
+    print(f"{bmi=:.2f} oznacza  otyłość III stopnia (chorobliwa)")
