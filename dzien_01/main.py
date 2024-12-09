@@ -124,3 +124,9 @@
 # # wersja 2 - python od 3.7 -> f-string
 # print(f"Witaj {zmienna_imie} {zmienna_nazwisko}!")
 
+
+#### ZADANIE 2
+
+# Napisz program, który pobierze od użytkownika jego imię oraz rok urodzenia.
+# Potem wypisze w konsoli pozdrowienie "Witaj IMIĘ" oraz wiek użytkownika.
+
