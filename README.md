@@ -15,7 +15,7 @@ Repozytorium zawiera materiały ze [szkolenia z podstaw Pythona](https://jsystem
 
 ## Kontakt z prowadzącym
 
-- [mail](mailto:lukasz@prokulski.science?subject=Szkolenie%20Python%pazdziernik%202024)
+- [mail](mailto:lukasz@prokulski.science?subject=Szkolenie%20Python%grudzien%202024)
 - [www](https://prokulski.science)
 - [blog](https://blog.prokulski.science)
 - [newsletter](https://www.subscribepage.com/daneanalizy) / [archiwum wydań](https://blog.prokulski.science/category/newsletter/)
