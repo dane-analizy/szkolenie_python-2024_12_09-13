@@ -415,15 +415,22 @@
 
 # continue:
 
-print("przed pętlą")
+# print("przed pętlą")
 
-for i in range(-10, 10):
-    print("w pętli", i)
-    if i == 0:
-        print("wykonuję continue")
-        continue # przerwij interację pętli i idź do kolejnej
-    print("w pętli po ifie")
-else:
-    print("else do fora się wykonał")
+# for i in range(-10, 10):
+#     print("w pętli", i)
+#     if i == 0:
+#         print("wykonuję continue")
+#         continue # przerwij interację pętli i idź do kolejnej
+#     print("w pętli po ifie")
+# else:
+#     print("else do fora się wykonał")
 
-print("po pętli")
+# print("po pętli")
+
+
+
+#### ZADANIE 8
+
+# Dla kolejnych liczb od -5 do 5 włącznie wyświetl wynik dzielenia 1 przez liczbę.
+# Jeśli trzeba to opuść jakąś liczbę.
