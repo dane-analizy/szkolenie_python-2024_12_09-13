@@ -130,3 +130,9 @@
 # Napisz program, który pobierze od użytkownika jego imię oraz rok urodzenia.
 # Potem wypisze w konsoli pozdrowienie "Witaj IMIĘ" oraz wiek użytkownika.
 
+BIEZACY_ROK = 2024
+
+imie = input("Podaj swoje imię: ")
+rok_urodzenia = input("W którym roku się urodziłeś? ")
+wiek = BIEZACY_ROK - int(rok_urodzenia)
+print(f"Witaj {imie}, widzę że masz {wiek} lat")
