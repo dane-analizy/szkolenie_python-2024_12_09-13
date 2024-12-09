@@ -173,11 +173,41 @@
 # inaczej
 #     wykonaj inne czynności
 
-zmienna = -10
+# zmienna = -10
 
-if zmienna > 0:
-    print(f"zmienna ma wartość {zmienna} i jest > 0")
+# if zmienna > 0:
+#     print(f"zmienna ma wartość {zmienna} i jest > 0")
+#     # egeg
+#     # gegeg
+# else:
+#     print("zmienna jest mniejsza niż 0")
+#     # inna instrukcja
+#     # jeszcze inna
+
+# print("Po ifie")
+
+
+# print(10 % 3) # reszta z dzielenia 10 przez 3
+# print(10 // 3) # ile razy całkowicie mieści się 3 w 10
+
+# liczba = 14
+# if liczba % 2 == 0:
+#     print(f"{liczba=} jest parzysta")
+# else:
+#     print(f"{liczba} nie jest parzysta")
+
+# if w ifie
+liczba = 13
+if liczba > 0:
+    if liczba % 2 == 0:
+        print(f"{liczba=} jest parzysta i dodatnia")
+        # fafaf
+        # afagag
+        # agagag
+    else:
+        print(f"{liczba} nie jest parzysta i dodatnia")
+    print("Skończyłem operacje z dodatnią liczbą")
 else:
-    print("zmienna jest mniejsza niż 0")
+    pass # pass nic nie robi
 
-print("Po ifie")
+print("Koniec programu")
