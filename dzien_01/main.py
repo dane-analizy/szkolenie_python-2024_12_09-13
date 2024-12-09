@@ -440,3 +440,30 @@
 #         print(f"opuszczam {i=}")
 #         continue
 #     print(1/i)
+
+
+# pętla while
+
+# while warunek:
+#     wykonaj czynności jeśli warunek == True
+
+# liczba_artykulow = 1560
+# while liczba_artykulow > 0:
+#     # klient zabiera trochę artykułów
+#     liczba_artykulow = liczba_artykulow - 50
+#     print(f"Po zakupach przez klienta zostało {liczba_artykulow}")
+#     if liczba_artykulow < 500:
+#         print("awaryjnie zamykamy sklep")
+#         break
+# else:
+#     print("wywołany else w while'u")
+    
+# print("Już wykupili wszystko")
+
+
+
+### ZADANIE 9
+
+# Napisz kod, który w nieskończoność będzie pytał użytkownika o kolejne słowa.
+# To co wpisze użytkownik - wypisujemy na ekranie.
+# Ale jeśli użytkownika wpisze słowo "stop" - kończymy program, dziękując za współpracę.
