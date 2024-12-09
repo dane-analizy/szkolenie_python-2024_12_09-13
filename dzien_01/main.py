@@ -215,12 +215,34 @@
 
 # konstrukcja elif
 
-liczba = 14
-if liczba % 3 == 0:
-    print(f"{liczba=} przy dzieleniu przez 3 nie zwraca reszty")
-elif liczba % 3 == 1:
-    print(f"{liczba=} przy dzieleniu przez 3 zwraca 1 reszty")
-elif liczba % 3 == 2:
-    print(f"{liczba=} przy dzieleniu przez 3 zwraca 2 reszty")
-else:
-    print("to jest zupełnie coś innego")
+# liczba = 14
+# if liczba % 3 == 0:
+#     print(f"{liczba=} przy dzieleniu przez 3 nie zwraca reszty")
+# elif liczba % 3 == 1:
+#     print(f"{liczba=} przy dzieleniu przez 3 zwraca 1 reszty")
+# elif liczba % 3 == 2:
+#     print(f"{liczba=} przy dzieleniu przez 3 zwraca 2 reszty")
+# else:
+#     print("to jest zupełnie coś innego")
+
+
+
+#### ZADANIE 4 
+
+# Napisz program, który pobierze od użytkownika masę i wzrost, a następnie policzy BMI i wypisze na konsolę.
+# Dodatkowo - na podstawie wartości obliczonego BMI niech poda komentarz.
+# < 16 => wygłodzenie
+# 16 - 16.999 => wychudzenie
+# 17 - 18,49 => niedowaga
+# 18,5 - 24,999 => pożądana masa ciała
+# 25 - 29,999 => nadwaga
+# 30 - 34,999 => otyłość I stopnia
+# 35 - 39,999 => otyłość II stopnia (duża)
+# > 40 => otyłość III stopnia (chorobliwa)
+
+
+
+# weigth = input("Podaj Twoja mase [kg]: ")
+# height = input("Podaj Twoj wzrost [cm]: ")
+
+# bmi = float(weigth) / (float(height) / 100) ** 2
