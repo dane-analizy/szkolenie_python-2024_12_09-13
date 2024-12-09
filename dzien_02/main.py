@@ -1,0 +1,1 @@
+czytanie z pliku
