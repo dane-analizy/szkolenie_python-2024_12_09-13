@@ -340,3 +340,8 @@
 # 1 Imie: Tom, Nazwisko: Cruise, Wzrost: 170, Waga: 68
 # 2 Imie: Scarlett, Nazwisko: Johansson, Wzrost: 160, Waga: 57
 # ...
+
+# 1. otworzyć plik
+# 2. przejść linia po linii
+# 3. każdą linię rozdzielić na składowe (pamiętaj o strip!)
+# 4. rozdzielone elementy wyświetlić na ekranie - pamiętaj o numerowaniu wierzy (enumerate się przyda)
