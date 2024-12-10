@@ -559,5 +559,29 @@
 # od najcięższego zawodnika
 
 
+nazwa_pliku = "zawodnicy.csv"
+sep = ";"
+
+# wczytanie danych
+dane = [linia.strip().split(sep) for linia in open(nazwa_pliku, "r", encoding="utf-8")]
+
+
+# oczyszczenie i wzbogacenie danych
+dane_wynikowe = []
+for rekord in dane:
+    waga = float(rekord[3])
+    wzrost = float(rekord[2])
+    bmi = waga / (wzrost / 100) ** 2
+    imie = rekord[0].strip()
+    nazwisko = rekord[1].strip()
+    dane_wynikowe.append([imie, nazwisko, wzrost, waga, bmi])
+
+# # wyświetlenie na ekranie ładnych wyników
+# postortuj dane_wynikowe po wadze od największego do najmniejszego
+
+for r in dane_wynikowe:
+    print(f"{r[0]} {r[1]} ({r[2]} cm, {r[3]} kg) ma BMI = {r[4]:.2f}")
+
+
 # z listy stringów do stringa
 # zapisywanie do pliku
