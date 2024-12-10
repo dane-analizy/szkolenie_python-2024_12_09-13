@@ -409,6 +409,12 @@
 # Każdy taki element ma zawierać numer potęgi (od 1 do 10) oraz wartość tej potęgi dla liczby 2.
 # Wyświetl tę listę.
 
+[
+    [1, 2],
+    [2, 4],
+    [3, 8],
+    ...
+]
 
 
 
