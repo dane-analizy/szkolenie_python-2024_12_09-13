@@ -321,7 +321,6 @@
 # print(lista)
 
 
-
 # rozdzielenie ciągu znaków
 
 # napis = "imie;nazwisko;wzrost;waga"
@@ -329,7 +328,6 @@
 # print(napis.split(";"))
 # print(napis.split("i"))
 # print(napis.split("zw"))
-
 
 
 #### ZADANIE 15
@@ -372,7 +370,49 @@
 #     )
 
 
-# list comprehention
+# list comprehention = listy składane
+
+# # coś to jest takie:
+# lista = []
+# for i in range(20):
+#     lista.append(i)
+# print(lista)
+
+# # można zapisać krócej:
+# lista2 = [i for i in range(20)]
+# print(lista2)
+
+
+# lista = [  i*2 for i in range(10)   ]
+# print(lista)
+
+# if i % 2:
+#     nieparzysta
+
+# # lista składana:
+# lista = [i for i in range(10) if i % 2]
+# print(lista)
+
+# # to samo w rozbudowanej formie
+# l2 = []
+# for i in range(10):
+#     if i % 2:
+#         wynik = i
+#         l2.append(wynik)
+# print(l2)
+
+
+
+#### ZADANIE 16
+
+# Korzystając z list składanych stwórz listę zawierającą elementy same będące listami.
+# Każdy taki element ma zawierać numer potęgi (od 1 do 10) oraz wartość tej potęgi dla liczby 2.
+# Wyświetl tę listę.
+
+
+
+
+
 # lista list
 # bmi z pliku
 # sortowanie
