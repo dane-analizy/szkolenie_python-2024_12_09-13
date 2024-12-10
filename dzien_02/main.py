@@ -452,17 +452,52 @@
 
 # bmi = waga [kg] / (wzrost [m] ** 2)
 
+# lista = [1, "abc", 23, "cośtam", 135]
+
+# pythonowo:
+# for el in lista:
+#     print(el)
+
+# w np. C:
+# for i in range(len(lista)):
+#     print(lista[i])
+
+
 nazwa_pliku = "zawodnicy.csv"
 sep = ";"
 
 dane = [linia.strip().split(sep) for linia in open(nazwa_pliku, "r", encoding="utf-8")]
-print(dane)
 
+dane_wynikowe = []
+for rekord in dane:
+    waga = float(rekord[3])
+    wzrost = float(rekord[2])
 
+    bmi = waga / (wzrost / 100) ** 2
+    if bmi < 16:
+        bmi_komentarz = "wygłodzenie"
+    elif bmi <= 17:
+        bmi_komentarz = "wychudzenie"
+    elif bmi <= 18.5:
+        bmi_komentarz = "niedowaga"
+    elif bmi <= 25:
+        bmi_komentarz = "pożądana masa ciała"
+    elif bmi <= 30:
+        bmi_komentarz = "nadwaga"
+    elif bmi <= 35:
+        bmi_komentarz = "otyłość I stopnia"
+    elif bmi <= 40:
+        bmi_komentarz = "otyłość II stopnia (duża)"
+    else:
+        bmi_komentarz = "otyłość III stopnia (chorobliwa)"
 
-#     print(
-#         f"{nr_linii}: Imie: {rekord_clean[0]}, Nazwisko: {rekord_clean[1]}, Wzrost: {rekord_clean[2]}, Waga: {rekord_clean[3]}"
-#     )
+    imie = rekord[0].strip()
+    nazwisko = rekord[1].strip()
+
+    dane_wynikowe.append([imie, nazwisko, wzrost, waga, bmi, bmi_komentarz])
+
+for r in dane_wynikowe:
+    print(f"{r[0]} {r[1]} ({r[2]} cm, {r[3]} kg) ma BMI = {r[4]:.2f} ({r[5]})")
 
 
 # sortowanie
