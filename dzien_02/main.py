@@ -65,3 +65,15 @@
 # w pliku, którego nazwa także podana jest przez użytkownika.
 
 # ciąg_przeszukiwany.count(szukany_ciag)
+
+# nazwa_pliku = input("podaj nazwę pliku: ")
+# nazwa_pliku = "pan-tadeusz.txt"
+# poszukiwany_tekst = "Tadeusz"
+
+# plik = open(nazwa_pliku, "r", encoding="utf-8")
+# zawartosc_pliku = plik.read()
+# plik.close()
+# zawartosc_pliku = zawartosc_pliku.lower()
+# poszukiwany_tekst = poszukiwany_tekst.lower()
+# liczba_wystapien = zawartosc_pliku.count(poszukiwany_tekst)
+# print(f"W pliku {nazwa_pliku} ciąg {poszukiwany_tekst} występuje {liczba_wystapien} razy.")
