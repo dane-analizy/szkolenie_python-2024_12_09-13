@@ -171,3 +171,7 @@
 # # jest równoznaczne z tym:
 # for iteracja, element in enumerate(range(10)):
 #     print(iteracja, element)
+
+
+
+### listy
