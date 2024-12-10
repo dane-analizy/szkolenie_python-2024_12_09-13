@@ -659,10 +659,10 @@
 # plik.close()
 
 
-nazwa_pliku = "zapiski.txt"
-plik = open(nazwa_pliku, "w", encoding="utf-8")
-text = ""
-while text.lower().strip() != "stop":
-    text = input("Co chcesz dopisać? ")
-    plik.write(text+"\n")
-plik.close()
+# nazwa_pliku = "zapiski.txt"
+# plik = open(nazwa_pliku, "w", encoding="utf-8")
+# text = ""
+# while text.lower().strip() != "stop":
+#     text = input("Co chcesz dopisać? ")
+#     plik.write(text+"\n")
+# plik.close()
