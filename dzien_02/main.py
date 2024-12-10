@@ -463,47 +463,101 @@
 #     print(lista[i])
 
 
-nazwa_pliku = "zawodnicy.csv"
-sep = ";"
+# nazwa_pliku = "zawodnicy.csv"
+# sep = ";"
 
-# wczytanie danych
-dane = [linia.strip().split(sep) for linia in open(nazwa_pliku, "r", encoding="utf-8")]
-
-
-# oczyszczenie i wzbogacenie danych
-dane_wynikowe = []
-for rekord in dane:
-    waga = float(rekord[3])
-    wzrost = float(rekord[2])
-
-    bmi = waga / (wzrost / 100) ** 2
-    if bmi < 16:
-        bmi_komentarz = "wygłodzenie"
-    elif bmi <= 17:
-        bmi_komentarz = "wychudzenie"
-    elif bmi <= 18.5:
-        bmi_komentarz = "niedowaga"
-    elif bmi <= 25:
-        bmi_komentarz = "pożądana masa ciała"
-    elif bmi <= 30:
-        bmi_komentarz = "nadwaga"
-    elif bmi <= 35:
-        bmi_komentarz = "otyłość I stopnia"
-    elif bmi <= 40:
-        bmi_komentarz = "otyłość II stopnia (duża)"
-    else:
-        bmi_komentarz = "otyłość III stopnia (chorobliwa)"
-
-    imie = rekord[0].strip()
-    nazwisko = rekord[1].strip()
-
-    dane_wynikowe.append([imie, nazwisko, wzrost, waga, bmi, bmi_komentarz])
-
-# wyświetlenie na ekranie ładnych wyników
-for r in dane_wynikowe:
-    print(f"{r[0]} {r[1]} ({r[2]} cm, {r[3]} kg) ma BMI = {r[4]:.2f} ({r[5]})")
+# # wczytanie danych
+# dane = [linia.strip().split(sep) for linia in open(nazwa_pliku, "r", encoding="utf-8")]
 
 
-# sortowanie
+# # oczyszczenie i wzbogacenie danych
+# dane_wynikowe = []
+# for rekord in dane:
+#     waga = float(rekord[3])
+#     wzrost = float(rekord[2])
+
+#     bmi = waga / (wzrost / 100) ** 2
+#     if bmi < 16:
+#         bmi_komentarz = "wygłodzenie"
+#     elif bmi <= 17:
+#         bmi_komentarz = "wychudzenie"
+#     elif bmi <= 18.5:
+#         bmi_komentarz = "niedowaga"
+#     elif bmi <= 25:
+#         bmi_komentarz = "pożądana masa ciała"
+#     elif bmi <= 30:
+#         bmi_komentarz = "nadwaga"
+#     elif bmi <= 35:
+#         bmi_komentarz = "otyłość I stopnia"
+#     elif bmi <= 40:
+#         bmi_komentarz = "otyłość II stopnia (duża)"
+#     else:
+#         bmi_komentarz = "otyłość III stopnia (chorobliwa)"
+
+#     imie = rekord[0].strip()
+#     nazwisko = rekord[1].strip()
+
+#     dane_wynikowe.append([imie, nazwisko, wzrost, waga, bmi, bmi_komentarz])
+
+# # wyświetlenie na ekranie ładnych wyników
+# for r in dane_wynikowe:
+#     print(f"{r[0]} {r[1]} ({r[2]} cm, {r[3]} kg) ma BMI = {r[4]:.2f} ({r[5]})")
+
+
+# sortowanie list
+
+# metoda .sort() - zmienia listę w posortowaną
+# lista = [35, 74, 12, 69, 38, 76, 83]
+# print(lista)
+
+# lista.sort()
+# print(lista)
+
+# lista.sort(reverse=True)
+# print(lista)
+
+
+# funkcja sotred() - zwraca posortowaną wersję listy, oryginalna jest bez zmian
+# lista = [35, 74, 12, 69, 38, 76, 83]
+# print(lista)
+
+# lista_posortowana = sorted(lista)
+# print(lista)
+# print(lista_posortowana)
+
+# lista_posortowana = sorted(lista, reverse=True)
+# print(lista_posortowana)
+
+
+# to nie zadziała - różne typy na liście
+# l = [10, 5, "abc", 7, "xyz"]
+# print(sorted(l))
+
+# float i int da się ze sobą porównać
+# l = [10, 5, 2.3, 7, 9.9]
+# print(sorted(l))
+
+
+# funkcja_napis = "wgubuwbgw".lower
+# lista = [funkcja_napis, funkcja_napis]
+# print(lista)
+# print(sorted(lista))
+
+
+# l = [[1, 10, "o"], [3, 6, "a"], [2, 8, "x"]]
+
+# print(sorted(l))
+
+# print(sorted(l, key=lambda x: x[1]))
+
+# print(sorted(l, key=lambda x: x[2]))
+
+
+#### ZADANIE 19
+
+# Wczytaj dane z pliku zawodnicy.csv. Posortuj je po wadze i wyświetl na konsoli,
+# od najcięższego zawodnika
+
+
 # z listy stringów do stringa
 # zapisywanie do pliku
