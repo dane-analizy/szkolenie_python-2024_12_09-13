@@ -330,3 +330,13 @@
 # print(napis.split("i"))
 # print(napis.split("zw"))
 
+
+
+#### ZADANIE 15
+
+# Wczytaj plik "zawodnicy.csv" i wyświetl na ekranie kolejne linie i pola z każdej z linii. Napisz co jest
+# imieniem, nazwiskiem wzrostem i wagą. Kazdy rekord powinien być ponumerowany od 1.
+# Oczekiwany wynik:
+# 1 Imie: Tom, Nazwisko: Cruise, Wzrost: 170, Waga: 68
+# 2 Imie: Scarlett, Nazwisko: Johansson, Wzrost: 160, Waga: 57
+# ...
