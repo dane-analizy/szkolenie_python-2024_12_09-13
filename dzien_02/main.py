@@ -402,6 +402,7 @@
 # print(l2)
 
 
+# lista list
 
 #### ZADANIE 16
 
@@ -409,17 +410,22 @@
 # Każdy taki element ma zawierać numer potęgi (od 1 do 10) oraz wartość tej potęgi dla liczby 2.
 # Wyświetl tę listę.
 
-[
-    [1, 2],
-    [2, 4],
-    [3, 8],
-    ...
-]
+# [
+#     [1, 2],
+#     [2, 4],
+#     [3, 8],
+#     ...
+# ]
+
+# lista = [[p, 2**p] for p in range(1, 11)]
+# print(lista)
 
 
+#### ZADANIE 17
+
+# Załaduj do postaci listy list zawartość pliku zawodnicy.csv. Użyj list comprehention.
 
 
-# lista list
 # bmi z pliku
 # sortowanie
 # z listy stringów do stringa
