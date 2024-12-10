@@ -585,4 +585,75 @@
 
 
 # z listy stringów do stringa
+
+# l = ["abc", "ala ma kota", "xyz"]
+# sep = ";"
+# # cel: "abc;ala ma kota;xyz"
+
+# s = ""
+# for i, ciag in enumerate(l):
+#     if i == 0:
+#         s = ciag
+#     else:
+#         s = s + ";" + ciag
+# print(s)
+
+# s2 = " + ".join(l)
+# print(s2)
+
+# s3 = sep.join(l)
+# print(s3)
+
+# l = [1,2,"adbv", 3.4]
+# sklejone = " + ".join(l)
+# print(sklejone)
+
+
+# l = [1, 2, "adbv", 3.4]
+# ls = [str(el) for el in l]
+# sklejone = " + ".join(ls)
+# # albo krócej:
+# # sklejone = " + ".join( [str(el) for el in l] )
+# print(sklejone)
+
+
 # zapisywanie do pliku
+# texts = [
+#     "Witaj, świecie!",
+#     "Python jest świetnym językiem programowania.",
+#     "Programowanie to fascynująca dziedzina.",
+#     "Każdy może nauczyć się kodować.",
+#     "Nauka programowania wymaga praktyki i cierpliwości.",
+# ]
+
+# nazwa_pliku_wyjsciowego = "wyjscie.txt"
+# plik = open(nazwa_pliku_wyjsciowego, "w", encoding="utf-8")
+# for linia in texts:
+#     plik.write(linia + "\n")
+# plik.close()
+
+
+# wersja 2:
+texts = [
+    "Witaj, świecie!",
+    "Python jest świetnym językiem programowania.",
+    "Programowanie to fascynująca dziedzina.",
+    "Każdy może nauczyć się kodować.",
+    "Nauka programowania wymaga praktyki i cierpliwości.",
+]
+
+nazwa_pliku_wyjsciowego = "wyjscie2.txt"
+plik = open(nazwa_pliku_wyjsciowego, "w", encoding="utf-8")
+
+# naokoło:
+# texts_ready = [linia+"\n" for linia in texts]
+# plik.writelines(texts_ready)
+
+# można krócej:
+# plik.writelines([linia + "\n" for linia in texts])
+
+# albo jeszcze inaczej:
+plik.write("\n".join(texts))
+plik.write("\n")
+
+plik.close()

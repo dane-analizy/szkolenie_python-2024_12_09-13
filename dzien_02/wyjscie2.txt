@@ -1,0 +1,5 @@
+Witaj, świecie!
+Python jest świetnym językiem programowania.
+Programowanie to fascynująca dziedzina.
+Każdy może nauczyć się kodować.
+Nauka programowania wymaga praktyki i cierpliwości.
