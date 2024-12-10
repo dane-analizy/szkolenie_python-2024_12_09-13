@@ -345,3 +345,36 @@
 # 2. przejść linia po linii
 # 3. każdą linię rozdzielić na składowe (pamiętaj o strip!)
 # 4. rozdzielone elementy wyświetlić na ekranie - pamiętaj o numerowaniu wierzy (enumerate się przyda)
+
+
+# nazwa_pliku = "zawodnicy.csv"
+# sep = ";"
+
+# for nr_linii, linia in enumerate(open(nazwa_pliku, "r", encoding="utf-8"), start=1):
+#     rekord = linia.strip().split(sep)
+#     print(f"{nr_linii}: Imie: {rekord[0]}, Nazwisko: {rekord[1]}, Wzrost: {rekord[2]}, Waga: {rekord[3]}")
+
+
+# nazwa_pliku = "zawodnicy.csv"
+# sep = ";"
+
+# for nr_linii, linia in enumerate(open(nazwa_pliku, "r", encoding="utf-8"), start=1):
+#     rekord = linia.strip().split(sep)
+#     print("="*50)
+#     print(rekord)
+
+#     rekord_clean = []
+#     for r in rekord:
+#         rekord_clean.append(r.strip())
+
+#     print(
+#         f"{nr_linii}: Imie: {rekord_clean[0]}, Nazwisko: {rekord_clean[1]}, Wzrost: {rekord_clean[2]}, Waga: {rekord_clean[3]}"
+#     )
+
+
+# list comprehention
+# lista list
+# bmi z pliku
+# sortowanie
+# z listy stringów do stringa
+# zapisywanie do pliku
