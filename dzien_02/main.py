@@ -324,8 +324,9 @@
 
 # rozdzielenie ciągu znaków
 
-napis = "imie;nazwisko;wzrost;waga"
-print(napis)
-print(napis.split(";"))
-print(napis.split("i"))
-print(napis.split("zw"))
+# napis = "imie;nazwisko;wzrost;waga"
+# print(napis)
+# print(napis.split(";"))
+# print(napis.split("i"))
+# print(napis.split("zw"))
+
