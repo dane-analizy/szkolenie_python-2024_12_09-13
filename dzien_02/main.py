@@ -82,14 +82,44 @@
 
 
 # rozwiązanie 2 = czytanie linia po linii
-nazwa_pliku = "pan-tadeusz.txt"
-poszukiwany_tekst = "Tadeusz"
-poszukiwany_tekst = poszukiwany_tekst.lower()
+# nazwa_pliku = "pan-tadeusz.txt"
+# poszukiwany_tekst = "Tadeusz"
+# poszukiwany_tekst = poszukiwany_tekst.lower()
 
-liczba_wystapien = 0
-for linia in open(nazwa_pliku, "r", encoding="utf-8"):
-    liczba_wystapien_w_linii = linia.lower().count(poszukiwany_tekst)
-    liczba_wystapien += liczba_wystapien_w_linii
+# liczba_wystapien = 0
+# for linia in open(nazwa_pliku, "r", encoding="utf-8"):
+#     liczba_wystapien_w_linii = linia.lower().count(poszukiwany_tekst)
+#     liczba_wystapien += liczba_wystapien_w_linii
 
-print(f"W pliku '{nazwa_pliku}' ciąg '{poszukiwany_tekst}' występuje {liczba_wystapien} razy.")
+# print(f"W pliku '{nazwa_pliku}' ciąg '{poszukiwany_tekst}' występuje {liczba_wystapien} razy.")
 
+
+
+# ciekawostki o f-stringach
+
+# print(f"{1/3}")
+# print(f"{1/3:.2f}")
+# print(f"{1/3:%}")
+# print(f"{1/3:.1%}")
+
+
+# napis = "Jasio"
+# print(f"|{napis}|")
+# print(f"|{napis=}|")
+# print(f"|{napis:<40}|")
+# print(f"|{napis:>40}|")
+# print(f"|{napis:^40}|")
+
+
+# liczba = 123
+# print(f"{liczba:06d}")
+# print(f"{liczba:6d}")
+
+
+# print(f"|{1/3:^50.3%}|")
+
+# from datetime import datetime
+# teraz = datetime.now()
+# print(type(teraz))
+# nazwa = f"{teraz:%Y%m%d_%H%M}.json"
+# print(nazwa)
