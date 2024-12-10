@@ -173,5 +173,66 @@
 #     print(iteracja, element)
 
 
-
 ### listy
+
+# lista = [
+#     1,
+#     2,
+#     "a",
+#     "ala ma kota",
+#     45.6,
+#     [9,8,7]
+# ]
+
+# print(lista)
+# print(type(lista))
+
+# for el in lista:
+#     print(el, type(el))
+
+
+# lista = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+# for i, el in enumerate(lista):
+#     if i == 5:
+#         break
+# print(el)
+
+# print(    lista[5]    )
+# print(lista[0])
+
+# print(len(lista)) # jest 10 elementów na liście, indeksowanych od 0 do 9 włącznie
+# # print(lista[10]) => nie ma elementu o indeksie = 10
+
+# print( lista[3:6] ) # od indeksu 3 włącznie do indeksu 6 wyłącznie
+# print(lista[0:6])
+
+# print(lista[:4])
+
+# print(lista[4:   ])
+
+# print( lista[2:8:3])
+
+# print(list(range(2, 8, 3)))
+
+
+# lista = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+# print(lista[len(lista) - 1])
+
+# print(lista[-1])
+
+# print(lista[::-1])
+
+
+# napis = "ala ma kota" # = ["a", "l", "a", " ", "m", "a", " ", "k", "o", "t", "a"]
+# print(napis[:5])
+# print(napis[::-1])
+
+
+#### ZADANIE 13
+
+# Napisz program, który pobierze od użytkownika słowo i sprawdzi czy jest palindromem,
+# czyli czy pisane od przodu i od tyłu jest takie samo - np. sos, Anna, sedes, zaraz,
+# kajak, zakaz, owocowo, potop, radar.
+
