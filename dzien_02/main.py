@@ -312,3 +312,20 @@
 
 # Napisz program, który pobierze od użytkownika 10 liczb,
 # zapamięta je (zapisze na liście), a na koniec wyświetli całą listę pobranych wartości.
+
+# lista = []
+# for i in range(10):
+#     wartosc = float(input("Podaj liczbę:"))
+#     lista.append(wartosc)
+
+# print(lista)
+
+
+
+# rozdzielenie ciągu znaków
+
+napis = "imie;nazwisko;wzrost;waga"
+print(napis)
+print(napis.split(";"))
+print(napis.split("i"))
+print(napis.split("zw"))
