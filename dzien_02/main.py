@@ -52,3 +52,7 @@
     
 # open().read() -> cały plik wczytany na raz do pamięci, do jednej zmiennej
 # open().readlines() = open() -> wczytanie linia po linii, do jednej zmiennej która jest listą
+
+
+
+# tekst => https://wolnelektury.pl/media/book/txt/pan-tadeusz.txt
