@@ -66,6 +66,8 @@
 
 # ciąg_przeszukiwany.count(szukany_ciag)
 
+
+# rozwiązanie 1 = wczytanie całego pliku na raz
 # nazwa_pliku = input("podaj nazwę pliku: ")
 # nazwa_pliku = "pan-tadeusz.txt"
 # poszukiwany_tekst = "Tadeusz"
@@ -77,3 +79,17 @@
 # poszukiwany_tekst = poszukiwany_tekst.lower()
 # liczba_wystapien = zawartosc_pliku.count(poszukiwany_tekst)
 # print(f"W pliku {nazwa_pliku} ciąg {poszukiwany_tekst} występuje {liczba_wystapien} razy.")
+
+
+# rozwiązanie 2 = czytanie linia po linii
+nazwa_pliku = "pan-tadeusz.txt"
+poszukiwany_tekst = "Tadeusz"
+poszukiwany_tekst = poszukiwany_tekst.lower()
+
+liczba_wystapien = 0
+for linia in open(nazwa_pliku, "r", encoding="utf-8"):
+    liczba_wystapien_w_linii = linia.lower().count(poszukiwany_tekst)
+    liczba_wystapien += liczba_wystapien_w_linii
+
+print(f"W pliku '{nazwa_pliku}' ciąg '{poszukiwany_tekst}' występuje {liczba_wystapien} razy.")
+
