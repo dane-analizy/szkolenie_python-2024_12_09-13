@@ -123,3 +123,23 @@
 # print(type(teraz))
 # nazwa = f"{teraz:%Y%m%d_%H%M}.json"
 # print(nazwa)
+
+
+
+#### ZADANIE 12
+
+# Napisz wyszukiwarkę plikową. Wyszukiwarka powinna odebrać od użytkownika poszukiwaną frazę oraz nazwę pliku.
+# W wyniku działania wyszukiwarka powinna pokazać w której linii wystąpiła wyszukiwana fraza
+# oraz całą linię. Wyszukiwarka powinna być nieczuła na wielkość liter.
+
+
+nazwa_pliku = "pan-tadeusz.txt"
+poszukiwany_tekst = "Tadeusz"
+poszukiwany_tekst = poszukiwany_tekst.lower()
+
+liczba_wystapien = 0
+for linia in open(nazwa_pliku, "r", encoding="utf-8"):
+    liczba_wystapien_w_linii = linia.lower().count(poszukiwany_tekst)
+    liczba_wystapien += liczba_wystapien_w_linii
+
+print(f"W pliku '{nazwa_pliku}' ciąg '{poszukiwany_tekst}' występuje {liczba_wystapien} razy.")
