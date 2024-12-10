@@ -459,6 +459,12 @@ dane = [linia.strip().split(sep) for linia in open(nazwa_pliku, "r", encoding="u
 print(dane)
 
 
+
+#     print(
+#         f"{nr_linii}: Imie: {rekord_clean[0]}, Nazwisko: {rekord_clean[1]}, Wzrost: {rekord_clean[2]}, Waga: {rekord_clean[3]}"
+#     )
+
+
 # sortowanie
 # z listy stringów do stringa
 # zapisywanie do pliku
