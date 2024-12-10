@@ -236,3 +236,10 @@
 # czyli czy pisane od przodu i od tyłu jest takie samo - np. sos, Anna, sedes, zaraz,
 # kajak, zakaz, owocowo, potop, radar.
 
+slowo = input("podaj jakieś słowo: ").lower().strip()
+palind = slowo[::-1]
+if palind == slowo:
+    print(f"'{slowo}' jest palindromem")
+else:
+    print(f"'{slowo}' nie jest palindromem")
+    
