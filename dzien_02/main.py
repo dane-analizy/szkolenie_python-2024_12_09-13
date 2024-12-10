@@ -425,6 +425,21 @@
 
 # Załaduj do postaci listy list zawartość pliku zawodnicy.csv. Użyj list comprehention.
 
+nazwa_pliku = "zawodnicy.csv"
+sep = ";"
+
+dane = [linia.strip().split(sep) for linia in open(nazwa_pliku, "r", encoding="utf-8")]
+print(dane)
+
+
+# dane = [
+#     [
+#         encja.strip()
+#         for encja in linia.strip().split(sep)
+#     ]
+#     for linia in open(nazwa_pliku, "r", encoding="utf-8")
+# ]
+# print(dane)
 
 # bmi z pliku
 # sortowanie
