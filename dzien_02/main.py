@@ -56,3 +56,12 @@
 
 
 # tekst => https://wolnelektury.pl/media/book/txt/pan-tadeusz.txt
+
+
+
+#### ZADANIE 11
+
+# Napisz program, który zliczy ilość wystąpień małej lub dużej wersji ciągu podanego przez użytkownika
+# w pliku, którego nazwa także podana jest przez użytkownika.
+
+# ciąg_przeszukiwany.count(szukany_ciag)
