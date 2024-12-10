@@ -425,11 +425,11 @@
 
 # Załaduj do postaci listy list zawartość pliku zawodnicy.csv. Użyj list comprehention.
 
-nazwa_pliku = "zawodnicy.csv"
-sep = ";"
+# nazwa_pliku = "zawodnicy.csv"
+# sep = ";"
 
-dane = [linia.strip().split(sep) for linia in open(nazwa_pliku, "r", encoding="utf-8")]
-print(dane)
+# dane = [linia.strip().split(sep) for linia in open(nazwa_pliku, "r", encoding="utf-8")]
+# print(dane)
 
 
 # dane = [
@@ -441,7 +441,24 @@ print(dane)
 # ]
 # print(dane)
 
+
 # bmi z pliku
+
+
+#### ZADANIE 18
+
+# Dla każdego wpisu w pliku zawodnicy.csv wyświetl na konsoli informację o imieniu, nazwisku,
+# wadze i wzroście oraz współczynniku BMI.
+
+# bmi = waga [kg] / (wzrost [m] ** 2)
+
+nazwa_pliku = "zawodnicy.csv"
+sep = ";"
+
+dane = [linia.strip().split(sep) for linia in open(nazwa_pliku, "r", encoding="utf-8")]
+print(dane)
+
+
 # sortowanie
 # z listy stringów do stringa
 # zapisywanie do pliku
