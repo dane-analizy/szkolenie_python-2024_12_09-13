@@ -1,0 +1,5 @@
+pierwsza linia w pliku
+      druga linia
+
+czwarta linia, bo trzecia była pusta
+piąta bez entera na końcu
