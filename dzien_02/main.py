@@ -634,26 +634,35 @@
 
 
 # wersja 2:
-texts = [
-    "Witaj, świecie!",
-    "Python jest świetnym językiem programowania.",
-    "Programowanie to fascynująca dziedzina.",
-    "Każdy może nauczyć się kodować.",
-    "Nauka programowania wymaga praktyki i cierpliwości.",
-]
+# texts = [
+#     "Witaj, świecie!",
+#     "Python jest świetnym językiem programowania.",
+#     "Programowanie to fascynująca dziedzina.",
+#     "Każdy może nauczyć się kodować.",
+#     "Nauka programowania wymaga praktyki i cierpliwości.",
+# ]
 
-nazwa_pliku_wyjsciowego = "wyjscie2.txt"
-plik = open(nazwa_pliku_wyjsciowego, "w", encoding="utf-8")
+# nazwa_pliku_wyjsciowego = "wyjscie2.txt"
+# plik = open(nazwa_pliku_wyjsciowego, "w", encoding="utf-8")
 
-# naokoło:
-# texts_ready = [linia+"\n" for linia in texts]
-# plik.writelines(texts_ready)
+# # naokoło:
+# # texts_ready = [linia+"\n" for linia in texts]
+# # plik.writelines(texts_ready)
 
-# można krócej:
-# plik.writelines([linia + "\n" for linia in texts])
+# # można krócej:
+# # plik.writelines([linia + "\n" for linia in texts])
 
-# albo jeszcze inaczej:
-plik.write("\n".join(texts))
-plik.write("\n")
+# # albo jeszcze inaczej:
+# plik.write("\n".join(texts))
+# plik.write("\n")
 
+# plik.close()
+
+
+nazwa_pliku = "zapiski.txt"
+plik = open(nazwa_pliku, "w", encoding="utf-8")
+text = ""
+while text.lower().strip() != "stop":
+    text = input("Co chcesz dopisać? ")
+    plik.write(text+"\n")
 plik.close()
