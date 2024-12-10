@@ -236,10 +236,79 @@
 # czyli czy pisane od przodu i od tyłu jest takie samo - np. sos, Anna, sedes, zaraz,
 # kajak, zakaz, owocowo, potop, radar.
 
-slowo = input("podaj jakieś słowo: ").lower().strip()
-palind = slowo[::-1]
-if palind == slowo:
-    print(f"'{slowo}' jest palindromem")
-else:
-    print(f"'{slowo}' nie jest palindromem")
-    
+# slowo = input("podaj jakieś słowo: ").lower().strip()
+# palind = slowo[::-1]
+# if palind == slowo:
+#     print(f"'{slowo}' jest palindromem")
+# else:
+#     print(f"'{slowo}' nie jest palindromem")
+
+
+# lista = [] # == lista = list()
+# print(lista)
+
+# lista.append(1)
+# print(lista)
+
+# lista.append("abc")
+# print(lista)
+
+# lista.append(1)
+# print(lista)
+
+# lista.append(3)
+# print(lista)
+
+# lista.append(4)
+# print(lista)
+
+# lista.append("napis")
+# print(lista)
+
+# # s = "Ala ma Kota"
+# # ss = s.lower()
+# # print(s)
+# # print(ss)
+
+# lista.remove(1)
+# print(lista)
+
+# # lista.remove(1)
+# # print(lista)
+
+# lista.pop(2)
+# print(lista)
+
+
+# mutowalność listy - zmieniając jedną listę zmieniamy też inną - obie leżą w tym samym miejscu w pamięci
+# l1 = [1,2,3]
+# l2 = l1
+# print("l1:", l1)
+# print("l2:", l2)
+
+# l2[1] = "napis"
+# print("l2:", l2)
+
+# print("l1:", l1)
+
+# obejście tego problemu - kopia listy
+# l1 = [1,2,3]
+# l2 = l1.copy()
+# print("l1:", l1)
+# print("l2:", l2)
+
+# l2[1] = "napis"
+# print("l2:", l2)
+
+# print("l1:", l1)
+
+
+# lista = [1,2,3]
+# lista.insert(1, "napis")
+# print(lista)
+
+
+#### ZADANIE 14
+
+# Napisz program, który pobierze od użytkownika 10 liczb,
+# zapamięta je (zapisze na liście), a na koniec wyświetli całą listę pobranych wartości.
