@@ -577,27 +577,43 @@
 # print(dane)
 # print(dane["projects"][1])
 
-my_dict = {
-    "name": "John Doe",  # String
-    "age": 28,  # Integer
-    "height": 5.9,  # Float
-    "is_student": False,  # Boolean
-    "hobbies": ["reading", "traveling", "gaming"],  # List
-    "grades": {"math": 90, "science": 85},  # Nested dictionary
-    "friends": ("Alice", "Bob"),  # Tuple
-    "address": None,  # NoneType
-    "projects": [
-        {"id": 1, "name": "AI Project"},
-        {"id": 2, "name": "Web Dev"},
-    ],  # List of dictionaries
-}
+# my_dict = {
+#     "name": "John Doe",  # String
+#     "age": 28,  # Integer
+#     "height": 5.9,  # Float
+#     "is_student": False,  # Boolean
+#     "hobbies": ["reading", "traveling", "gaming"],  # List
+#     "grades": {"math": 90, "science": 85},  # Nested dictionary
+#     "friends": ("Alice", "Bob"),  # Tuple
+#     "address": None,  # NoneType
+#     "projects": [
+#         {"id": 1, "name": "AI Project"},
+#         {"id": 2, "name": "Web Dev"},
+#     ],  # List of dictionaries
+#     # (12,11): "wartość dla daty"
+# }
 
 # zapisanie do JSONa
-import json
-with open("dane2.json", "w", encoding="utf-8") as plik:
-    json.dump(my_dict, plik)
+# import json
+# with open("dane2.json", "w", encoding="utf-8") as plik:
+#     json.dump(my_dict, plik)
     
 # zapisanie do YAMLa
-import yaml
-with open("dane2.yaml", "w", encoding="utf-8") as plik:
-    yaml.safe_dump(my_dict, plik, sort_keys=False)
+# import yaml
+# with open("dane2.yaml", "w", encoding="utf-8") as plik:
+#     yaml.safe_dump(my_dict, plik, sort_keys=False)
+
+
+
+### ZADANIE 25
+
+# Policz ile razy występują poszczególne słowa w tekście "Pana Tadeusza".
+# Użyj słowników - kluczem niech będzie słowo zapisane małymi literami,
+# a wartością - liczba jego wystąpień.
+
+
+# 1. wczytać tekst - open().read()
+# 2. do małych liter
+# 3. na całym tekście .split() -> to nam rozbije tekst na słowa
+# 4. przelecieć wszystkie słowa i utworzyć w słowniku klucz = słowo, albo zwiększyć wartość
+# 5. wyświetlić słownik na ekranie
