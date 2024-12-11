@@ -500,44 +500,51 @@
 
 ## rozwiązanie zadania 24 z użyciem słowników
 
-# 1. import Fakera
-from faker import Faker
+# # 1. import Fakera
+# from faker import Faker
 
-# 2. inicjalizacja klasy
-f = Faker("pl_PL")
+# # 2. inicjalizacja klasy
+# f = Faker("pl_PL")
 
+# # konfiguracja
+# kolumny_do_pliku = ["id", "nazwisko", "ulica", "telefon"]
 
-# konfiguracja
-kolumny_do_pliku = ["id", "nazwisko", "ulica", "telefon"]
-
-# 3. w pętli 10 tysięcy razy generujemy odpowiednie "składkowe"
-lista_osob = []
-for id in range(10_000):
-    osoba = {
-        "id": str(id + 1),
-        "imie": f.first_name(),
-        "nazwisko": f.last_name(),
-        "firma": f.company(),
-        "email": f.email(),
-        "telefon": f.phone_number(),
-        "miasto": f.city(),
-        "ulica": f.street_name(),
-        "nr_budynku": f.building_number(),
-    }
-    lista_osob.append(osoba)
-
-
-linie_wynikowe = []
-for o in lista_osob:
-    linia = []
-    for k in kolumny_do_pliku:
-        pole = o.get(k, "")
-        linia.append(str(pole))
-    linia_do_zapisu = ";".join(linia) + "\n"
-    linie_wynikowe.append(linia_do_zapisu)
+# # 3. w pętli 10 tysięcy razy generujemy odpowiednie "składkowe"
+# lista_osob = []
+# for id in range(10_000):
+#     osoba = {
+#         "id": str(id + 1),
+#         "imie": f.first_name(),
+#         "nazwisko": f.last_name(),
+#         "firma": f.company(),
+#         "email": f.email(),
+#         "telefon": f.phone_number(),
+#         "miasto": f.city(),
+#         "ulica": f.street_name(),
+#         "nr_budynku": f.building_number(),
+#     }
+#     lista_osob.append(osoba)
 
 
-with open("spoleczenstwo_2.csv", "w", encoding="utf-8") as plik:
-    naglowek = ";".join(kolumny_do_pliku) + "\n"
-    plik.write(naglowek)
-    plik.writelines(linie_wynikowe)
+# linie_wynikowe = []
+# for o in lista_osob:
+#     linia = []
+#     for k in kolumny_do_pliku:
+#         pole = o.get(k, "")
+#         linia.append(str(pole))
+#     linia_do_zapisu = ";".join(linia) + "\n"
+#     linie_wynikowe.append(linia_do_zapisu)
+
+
+# with open("spoleczenstwo_2.csv", "w", encoding="utf-8") as plik:
+#     naglowek = ";".join(kolumny_do_pliku) + "\n"
+#     plik.write(naglowek)
+#     plik.writelines(linie_wynikowe)
+
+
+# import pandas as pd
+
+# lista_osob_data_frame = pd.DataFrame(lista_osob)
+# print(lista_osob_data_frame)
+# lista_osob_data_frame.to_csv("spoleczenstwo_z_pandas.csv", sep="|", index=False)
+# lista_osob_data_frame.to_excel("spoleczenstwo_z_pandas.xlsx", index=False)
