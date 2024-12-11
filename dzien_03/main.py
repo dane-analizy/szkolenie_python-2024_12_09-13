@@ -362,3 +362,11 @@
 # print("f.company():", f.company())
 # print("f.email():", f.email())
 # print("f.building_number():", f.building_number())
+
+
+
+
+#### ZADANIE 24
+
+# Korzystając z pakietu Faker wygeneruj plik CSV zawierający 10 tysięcy rekordów zawierających:
+# id będące liczbą porządkową, imię, nazwisko, nazwa firmy, email, telefon, miasto, ulica i numer domu
