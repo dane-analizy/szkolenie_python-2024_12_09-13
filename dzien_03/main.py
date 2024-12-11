@@ -187,9 +187,9 @@
 
 # podobnie z wykorzystaniem pathlib
 
-from pathlib import Path
+# from pathlib import Path
 
-sciezka = Path("..")
+# sciezka = Path("..")
 # print(sciezka.anchor)
 # print(sciezka.absolute())
 # print(sciezka.exists())
@@ -209,3 +209,23 @@ sciezka = Path("..")
     
 #     print(s, typ, s.stat().st_size)
     
+
+# czy string kończy się albo zaczyna na podany ciąg:
+# s = "napis"
+# print(s.endswith("is"))
+# print(s.startswith("NA"))
+
+
+#### ZADANIE 22
+
+# Pobierz od użytkownika nazwę katalogu i rozszerzenie pliku. Wyświetl wszystkie pliki, które
+# znajdują się we wskazanym katalogu (i jego w głąb) z podanym rozszerzeniem WIĘKSZE niż 1000 bajtów.
+
+from pathlib import Path
+
+nazwa_katalogu = ...
+rozszerzenie = ...
+
+for s in Path(nazwa_katalogu). ....:
+    if s.endswith(....) and ....:
+        print(s)
