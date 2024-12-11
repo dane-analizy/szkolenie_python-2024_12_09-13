@@ -67,3 +67,70 @@
 # # plik = open(nazwa_pliku_wyjsciowego, "w", encoding="utf-8")
 # with open(nazwa_pliku_wyjsciowego, "w", encoding="utf-8") as plik:
 #     plik.writelines(dane_do_zapisania)
+
+
+### Krotki = tuple
+
+# lista = [1,2,3, "abc", "def"]
+# krotka = (1, 2, 3, "abc", "def", "abc")
+# print(lista)
+# print(krotka)
+
+# krotka_z_listy = tuple(lista)
+# print(krotka_z_listy)
+
+
+# ile czasu wykonuje się program?
+# import time
+
+# l = list(range(100_000))
+# start_time = time.perf_counter()
+# suma = 0
+# for el in range(10_000):
+#     suma = suma + l[el*10]
+# end_time = time.perf_counter()
+# print(end_time - start_time)
+
+# k = tuple(range(100_000))
+# start_time = time.perf_counter()
+# suma = 0
+# for el in range(10_000):
+#     suma = suma + k[el*10]
+# end_time = time.perf_counter()
+# print(end_time - start_time)
+
+# scalenie dwóch list
+# l1 = [1,2,3]
+# l2 = ["a", "b", "c"]
+# l3 = l1 + l2
+# print(l3)
+
+# scalenie listy i krotki
+# l1 = [1, 2, 3]
+# k2 = ("a", "b", "c")
+# k3 = tuple(l1) + k2
+# print(k3)
+
+# l3 = l1 + list(k2)
+# print(l3)
+
+# l = [i**2 for i in range(10)]
+# k = tuple(l)
+
+# sortowanie krotek, sorted() zwraca listę!
+# k = (1,3,4,2)
+# print(sorted(k))
+
+
+# 100 losowych liczb od 0 do 100
+# import random
+# for _ in range(100):
+#     print(random.randint(0, 100))
+
+
+#### ZADANIE 21
+# Stwórz dwie krotki. Jedna ma zawierać 10 losowych liczb zakresu 1-10,
+# druga 10 losowych liczb zakresu 11-20.
+# Stwórz trzecią krotkę która ma zawierać dane z obu krotek.
+# Trzecią krotkę wypisz na konsoli.
+# Stwórz czwartą krotkę, która będzie posortowaną malejąco trzecią krotką. Też wypisz ją na konsoli.
