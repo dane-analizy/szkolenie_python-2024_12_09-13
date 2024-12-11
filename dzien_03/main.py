@@ -332,3 +332,33 @@
 
 # losowe_liczby = [random.randint(1, 50) for _ in range(100)]
 # print(sorted(set(losowe_liczby)))
+
+
+# pakiety zewnętrzne
+# https://pypi.org/
+
+
+# pakiet Faker - tworzy sztuczne dane
+# pip install faker
+# albo:
+# python -m pip install faker
+
+# import faker
+# f = faker.Faker()
+
+# albo:
+
+# from faker import Faker
+
+# f = Faker('pl_PL')
+
+# print("f.name():", f.name())
+# print("f.address():", f.address())
+# print("f.phone_number():", f.phone_number())
+# print("f.street_name():", f.street_name())
+# print("f.first_name():", f.first_name())
+# print("f.last_name():", f.last_name())
+# print("f.city():", f.city())
+# print("f.company():", f.company())
+# print("f.email():", f.email())
+# print("f.building_number():", f.building_number())
