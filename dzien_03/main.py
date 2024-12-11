@@ -257,6 +257,8 @@
 
 # for s in Path(katalog).rglob("*"):
 #     # wczytujemy plik linia po linii
+#     if s.is_dir():
+#         continue
 #     try:
 #         for nr_linii, linia in enumerate(open(s.as_posix(), "r", encoding="utf-8"), start=1):
 #             # jedziemy przez linie i sprawdzamy czy istnieje poszukany ciąg - wyświeltamy jeśli tak
