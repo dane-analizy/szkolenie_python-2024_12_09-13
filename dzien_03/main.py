@@ -266,3 +266,59 @@
 #                 print(f"{s.as_posix():<30} : {nr_linii:>6} > {linia.strip()}")
 #     except Exception:
 #         pass
+
+
+# zbiory = set
+
+# l = [1, 2, "a", "b", "c", 5, 1, 2, "a"]
+# k = (10, 20, "abc", "bdg", 20)
+
+# ls = set(l)
+# ks = set(k)
+
+# print(set(ls))
+# print(set(ks))
+
+
+# l = [1,1,2,3,4,1,2,5]
+# ls = set(l)
+# ks = {4,5,6,7,8}
+# print(ls)
+# print(ks)
+
+# ls.add(1)
+# print(ls)
+
+# # część wspólna
+# print(ls.intersection(ks))
+
+# # różnica zbiorów
+# print(ls.difference(ks))
+# print(ks.difference(ls))
+
+# # suma zbiorów
+# print(ks.union(ls))
+
+
+# lista = [1, 1, 2, 3, 4, 1, 2, 5]
+# lista_unikalna = list(set(lista))
+# print(lista_unikalna)
+
+
+# lista = [ [1, 2], ["a", "b", "c"], [10, "xyz"]]
+# s = set(lista)
+# print(s)
+
+# import hashlib
+
+# print(hashlib.sha256(b"alamakota123").hexdigest())
+# print(hashlib.sha256(b"Alamakota123").hexdigest())
+# print(hashlib.sha256(b"alamakota123").hexdigest())
+
+# # alamakota123 => 082faf35398a2e2659fc38bb6be004ae7133bcc0f0f8464380206341cb95793e
+# print("alamakota123".__hash__())
+# l = [123, 123]
+# l.__hash__()
+
+#  komis = [Auto(64u4ju), Auto(aqgqg)]
+
