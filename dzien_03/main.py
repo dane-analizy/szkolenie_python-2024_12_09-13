@@ -227,5 +227,5 @@ nazwa_katalogu = ...
 rozszerzenie = ...
 
 for s in Path(nazwa_katalogu). ....:
-    if s.endswith(....) and ....:
+    if s.as_posix().endswith(....) and ....:
         print(s)
