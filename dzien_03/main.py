@@ -364,16 +364,44 @@
 # print("f.building_number():", f.building_number())
 
 
-
-
 #### ZADANIE 24
 
 # Korzystając z pakietu Faker wygeneruj plik CSV zawierający 10 tysięcy rekordów zawierających:
 # id będące liczbą porządkową, imię, nazwisko, nazwa firmy, email, telefon, miasto, ulica i numer domu
 
 # 1. import Fakera
+from faker import Faker
+
 # 2. inicjalizacja klasy
 f = Faker("pl_PL")
-# 3. w pętli 10 tysięcy razy generujemy odpowiednie "składkowe" 
+
+# 3. w pętli 10 tysięcy razy generujemy odpowiednie "składkowe"
+lista_osob = []
+for id in range(10_000):
+    osoba = [
+        str(id + 1),
+        f.first_name(),
+        f.last_name(),
+        f.company(),
+        f.email(),
+        # f.postalcode(), ###
+        f.phone_number(),
+        f.city(),
+        f.street_name(),
+        f.building_number(),
+    ]
+    lista_osob.append(osoba)
+
 # 4. scalamy w jedną linię rozdzieloną ;
-# 5. zapisujemy do pliku
+dane_wyjsciowe = []
+for o in lista_osob:
+    linia = f"{o[0]};{o[1]};{o[2]};{o[3]};{o[4]};{o[5]};{o[6]};{o[7]};{o[8]}\n"
+    dane_wyjsciowe.append(linia)
+
+# 5. lista nazw kolumn
+kolumny = "id;first_name;last_name;company;email;phone_number;city;street_name;building_number\n"
+
+# 6. zapisujemy do pliku
+with open("spoleczenstwo.csv", "w", encoding="utf-8") as f:
+    f.write(kolumny)
+    f.writelines(dane_wyjsciowe)
