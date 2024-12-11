@@ -136,3 +136,14 @@
 # Stwórz trzecią krotkę która ma zawierać dane z obu krotek.
 # Trzecią krotkę wypisz na konsoli.
 # Stwórz czwartą krotkę, która będzie posortowaną malejąco trzecią krotką. Też wypisz ją na konsoli.
+
+# import random
+
+# k1 = tuple([random.randint( 1, 10) for _ in range(10)])
+# k2 = tuple([random.randint(11, 20) for _ in range(10)])
+
+# k3 = k1 + k2
+# print(k3)
+
+# k4 = tuple(sorted(k3, reverse=True))
+# print(k4)
