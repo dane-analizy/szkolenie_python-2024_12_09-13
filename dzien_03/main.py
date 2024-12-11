@@ -548,3 +548,15 @@
 # print(lista_osob_data_frame)
 # lista_osob_data_frame.to_csv("spoleczenstwo_z_pandas.csv", sep="|", index=False)
 # lista_osob_data_frame.to_excel("spoleczenstwo_z_pandas.xlsx", index=False)
+
+# import os
+
+# for k,v in os.environ.items():
+#     print(k,v )
+
+# if os.environ['PASSWORD_KURS'] == "tajnehaslo":
+#     print("możesz wejść")
+
+# import hashlib
+
+# print(hashlib.sha256("efwgw".encode()).hexdigest())
