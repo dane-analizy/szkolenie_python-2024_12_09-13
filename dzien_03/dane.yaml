@@ -1,0 +1,30 @@
+name: John Doe
+age: 28
+height: 5.9
+is_student: false
+hobbies:
+  - reading
+  - traveling
+  - gaming
+grades:
+  math: 90
+  science: 85
+
+
+# lista przyjaciół
+friends:
+  - Alice
+  - Bob
+
+# tymczasowo nie ma adresu
+address: null
+
+
+
+projects:
+  - id: 1
+    name: AI Project
+  - id: 2
+    name: Web Dev # to jest komentarz
+profile: !!binary |
+  dXNlcjEyMw==

@@ -560,3 +560,44 @@
 # import hashlib
 
 # print(hashlib.sha256("efwgw".encode()).hexdigest())
+
+
+# YAML i JSON
+# pip install PyYAML
+
+# import json
+# with open("dane.json", "r", encoding="utf-8") as plik:
+#     dane = json.load(plik)
+# print(dane)
+
+
+# import yaml
+# with open("dane.yaml", "r", encoding="utf-8") as plik:
+#     dane = yaml.safe_load(plik)
+# print(dane)
+# print(dane["projects"][1])
+
+my_dict = {
+    "name": "John Doe",  # String
+    "age": 28,  # Integer
+    "height": 5.9,  # Float
+    "is_student": False,  # Boolean
+    "hobbies": ["reading", "traveling", "gaming"],  # List
+    "grades": {"math": 90, "science": 85},  # Nested dictionary
+    "friends": ("Alice", "Bob"),  # Tuple
+    "address": None,  # NoneType
+    "projects": [
+        {"id": 1, "name": "AI Project"},
+        {"id": 2, "name": "Web Dev"},
+    ],  # List of dictionaries
+}
+
+# zapisanie do JSONa
+import json
+with open("dane2.json", "w", encoding="utf-8") as plik:
+    json.dump(my_dict, plik)
+    
+# zapisanie do YAMLa
+import yaml
+with open("dane2.yaml", "w", encoding="utf-8") as plik:
+    yaml.safe_dump(my_dict, plik, sort_keys=False)
