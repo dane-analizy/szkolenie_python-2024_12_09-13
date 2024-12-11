@@ -651,9 +651,13 @@
 tekst = open("pan-tadeusz.txt", "r", encoding="utf-8").read()
 tekst = tekst.lower()
 
-biale_znaki = ',.?!\n-:;…—*()%-+"«»/'
+biale_znaki = ',.?!-:;…—*()%-+"«»/'
 for bz in biale_znaki:
     tekst = tekst.replace(bz, " ")
+    
+# with open("pan-tadeusz_czysty.txt", "w", encoding="utf-8") as pt:
+#     pt.write(tekst)
+
 wszystkie_slowa = tekst.split()
 
 liczba_wystapien = {}
@@ -663,7 +667,7 @@ for s in wszystkie_slowa:
 #  print(liczba_wystapien)
 
 # sortowanie słowników
-liczba_wystapien_posortowane = sorted(liczba_wystapien.items(), key=lambda k: k[1])
+liczba_wystapien_posortowane = sorted(liczba_wystapien.items(), key=lambda kv: kv[1])
 liczba_wystapien_posortowane = dict(liczba_wystapien_posortowane)
 print(liczba_wystapien_posortowane)
 
