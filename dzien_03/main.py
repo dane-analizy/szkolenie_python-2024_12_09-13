@@ -165,6 +165,8 @@
 
 # lista plików: os.walk vs pathlib
 
+# listowanie rekurencyjne plików i katalogów
+
 # import os
 
 # for s in os.walk(".."):
@@ -181,3 +183,29 @@
 #         print(f"\t{nazwa_katalogu}")
 
 #     print()
+
+
+# podobnie z wykorzystaniem pathlib
+
+from pathlib import Path
+
+sciezka = Path("..")
+# print(sciezka.anchor)
+# print(sciezka.absolute())
+# print(sciezka.exists())
+# print(sciezka.is_dir())
+# print(sciezka.is_file())
+# print(sciezka.name)
+# print(sciezka.as_posix())
+# print(sciezka.stat())
+
+# for s in sciezka.rglob("*"):
+#     typ = "PLIK" if s.is_file() else "KATALOG"
+#     # ta jedna linijka odpowiada:
+#     # if s.is_file():
+#     #     typ = "PLIK"
+#     # else:
+#     #     typ = "KATALOG"
+    
+#     print(s, typ, s.stat().st_size)
+    
