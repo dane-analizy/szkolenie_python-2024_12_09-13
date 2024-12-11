@@ -423,7 +423,7 @@
 # print(d.get("wiek"))
 # print(d.get("wiek", 0))
 
-# d['miasto'] = "Warszawa" 
+# d['miasto'] = "Warszawa"
 # print(d)
 
 # d['imie'] = "Jan"
@@ -448,10 +448,96 @@
 # }
 # print(d)
 
-# print(    d.get( (2023, 12, 24) , {} )    )
+# print(d.get((2023, 12, 24), {}))
+
+# print(d.get((2024, 12, 11)).get("temp"))
+# print(d.get((2024, 12, 12), {}).get("temp", "brak pomiaru"))
+
+
+# print(d[(2024, 12, 11)]["temp"])
+
 
 # pusty_slownik = {"a":None}
 # if pusty_slownik:
 #     print("nie jest wcale pusty")
 # else:
 #     print("faktycznie pusty")
+
+
+# iterowanie po słowniku
+# d = {
+#     "name": "John Doe",  # String
+#     "age": 28,  # Integer
+#     "height": 5.9,  # Float
+#     "is_student": False,  # Boolean
+#     "hobbies": ["reading", "traveling", "gaming"],  # List
+#     "grades": {"math": 90, "science": 85},  # Nested dictionary
+#     "friends": ("Alice", "Bob"),  # Tuple
+#     "address": None,  # NoneType
+#     "projects": [
+#         {"id": 1, "name": "AI Project"},
+#         {"id": 2, "name": "Web Dev"},
+#     ],  # List of dictionaries
+# }
+
+# for element in d:
+#     print(element)
+
+# for element in d.keys():
+#     print(element)
+
+# for element in d.values():
+#     print(element)
+
+# for k, v in d.items():
+#     print(f"{k=} ==>> {v=}")
+
+# while d:
+#     print(d.popitem())
+#     print(d)
+#     print("-"*50)
+
+
+## rozwiązanie zadania 24 z użyciem słowników
+
+# 1. import Fakera
+from faker import Faker
+
+# 2. inicjalizacja klasy
+f = Faker("pl_PL")
+
+
+# konfiguracja
+kolumny_do_pliku = ["id", "nazwisko", "ulica", "telefon"]
+
+# 3. w pętli 10 tysięcy razy generujemy odpowiednie "składkowe"
+lista_osob = []
+for id in range(10_000):
+    osoba = {
+        "id": str(id + 1),
+        "imie": f.first_name(),
+        "nazwisko": f.last_name(),
+        "firma": f.company(),
+        "email": f.email(),
+        "telefon": f.phone_number(),
+        "miasto": f.city(),
+        "ulica": f.street_name(),
+        "nr_budynku": f.building_number(),
+    }
+    lista_osob.append(osoba)
+
+
+linie_wynikowe = []
+for o in lista_osob:
+    linia = []
+    for k in kolumny_do_pliku:
+        pole = o.get(k, "")
+        linia.append(str(pole))
+    linia_do_zapisu = ";".join(linia) + "\n"
+    linie_wynikowe.append(linia_do_zapisu)
+
+
+with open("spoleczenstwo_2.csv", "w", encoding="utf-8") as plik:
+    naglowek = ";".join(kolumny_do_pliku) + "\n"
+    plik.write(naglowek)
+    plik.writelines(linie_wynikowe)
