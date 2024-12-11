@@ -612,8 +612,61 @@
 # a wartością - liczba jego wystąpień.
 
 
-# 1. wczytać tekst - open().read()
-# 2. do małych liter
-# 3. na całym tekście .split() -> to nam rozbije tekst na słowa
-# 4. przelecieć wszystkie słowa i utworzyć w słowniku klucz = słowo, albo zwiększyć wartość
-# 5. wyświetlić słownik na ekranie
+# # 1. wczytać tekst - open().read()
+# tekst = open("pan-tadeusz.txt", "r", encoding="utf-8").read()
+
+# # 2. do małych liter
+# tekst = tekst.lower()
+
+# # extra punkt - czyszczenie tekstu ze znaków przestankowych
+# biale_znaki = ',.?!\n-:;…—*()%-+"«»/'
+# for bz in biale_znaki:
+#     tekst = tekst.replace(bz, " ")
+
+
+# # 3. na całym tekście .split() -> to nam rozbije tekst na słowa
+# wszystkie_slowa = tekst.split()
+# # print(len(wszystkie_slowa)) # liczba wszystkich słów
+# # print(len(set(wszystkie_slowa))) # liczba unikalnych słów
+
+# # 4. przelecieć wszystkie słowa i utworzyć w słowniku klucz = słowo, albo zwiększyć wartość
+# liczba_wystapien = {}
+# for s in wszystkie_slowa:
+#     if s in liczba_wystapien.keys():
+#         liczba_wystapien[s] = liczba_wystapien[s] + 1
+#     else:
+#         liczba_wystapien[s] = 1
+        
+# # 5. wyświetlić słownik na ekranie
+# print(liczba_wystapien)
+
+# # klucze zaczynające się od "tadeusz" (tadeusz, tadeuszek, tadeuszowi...)
+# for k,v in liczba_wystapien.items():
+#     if k.startswith("tadeusz"):
+#         print(k,v)
+
+
+# rozwiązanie w skróconej wersji
+
+tekst = open("pan-tadeusz.txt", "r", encoding="utf-8").read()
+tekst = tekst.lower()
+
+biale_znaki = ',.?!\n-:;…—*()%-+"«»/'
+for bz in biale_znaki:
+    tekst = tekst.replace(bz, " ")
+wszystkie_slowa = tekst.split()
+
+liczba_wystapien = {}
+for s in wszystkie_slowa:
+    liczba_wystapien[s] = liczba_wystapien.get(s, 0) + 1
+
+#  print(liczba_wystapien)
+
+# sortowanie słowników
+liczba_wystapien_posortowane = sorted(liczba_wystapien.items(), key=lambda k: k[1])
+liczba_wystapien_posortowane = dict(liczba_wystapien_posortowane)
+print(liczba_wystapien_posortowane)
+
+for k, v in liczba_wystapien_posortowane.items():
+    if k.startswith("tadeusz"):
+        print(k,v)
