@@ -206,9 +206,9 @@
 #     #     typ = "PLIK"
 #     # else:
 #     #     typ = "KATALOG"
-    
+
 #     print(s, typ, s.stat().st_size)
-    
+
 
 # czy string kończy się albo zaczyna na podany ciąg:
 # s = "napis"
@@ -221,11 +221,46 @@
 # Pobierz od użytkownika nazwę katalogu i rozszerzenie pliku. Wyświetl wszystkie pliki, które
 # znajdują się we wskazanym katalogu (i jego w głąb) z podanym rozszerzeniem WIĘKSZE niż 1000 bajtów.
 
-from pathlib import Path
+# from pathlib import Path
 
-nazwa_katalogu = ...
-rozszerzenie = ...
+# nazwa_katalogu = input("Gdzie szukać? ")
+# rozszerzenie = input("Jakich plików szukać (rozszerzenie)? ")
 
-for s in Path(nazwa_katalogu). ....:
-    if s.as_posix().endswith(....) and ....:
-        print(s)
+# for s in Path(nazwa_katalogu).rglob("*"):
+#     if s.as_posix().endswith(rozszerzenie) and s.stat().st_size > 15_000:
+#         print(s, s.stat().st_size)
+
+# wykorzystując możliwości Path()
+
+# from pathlib import Path
+
+# nazwa_katalogu = input("Gdzie szukać? ")
+# rozszerzenie = input("Jakich plików szukać (rozszerzenie)? ")
+
+# for s in Path(nazwa_katalogu).rglob(f"*{rozszerzenie}"): # bierzemy pliki pasujące do maski
+#     if s.stat().st_size > 10:
+#         print(s, s.stat().st_size)
+
+
+# grep - wyszukiwanie tekstu w pliku
+# grep -irn ciag katalog
+
+# import sys
+# from pathlib import Path
+
+# if len(sys.argv) < 3:  # ile podano parametrów
+#     katalog = input("Gdzie szukać?:")
+#     ciag = input("Czego szukać?: ")
+# else:
+#     katalog = sys.argv[1]
+#     ciag = sys.argv[2]
+
+# for s in Path(katalog).rglob("*"):
+#     # wczytujemy plik linia po linii
+#     try:
+#         for nr_linii, linia in enumerate(open(s.as_posix(), "r", encoding="utf-8"), start=1):
+#             # jedziemy przez linie i sprawdzamy czy istnieje poszukany ciąg - wyświeltamy jeśli tak
+#             if ciag.lower() in linia.lower():
+#                 print(f"{s.as_posix():<30} : {nr_linii:>6} > {linia.strip()}")
+#     except Exception:
+#         pass
