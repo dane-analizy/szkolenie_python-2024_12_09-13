@@ -328,3 +328,7 @@
 # Przygotuj listę 100 losowych liczb z zakresu 1-50.
 # Wyświetl na konsoli unikalne liczby w kolejności rosnącej.
 
+# import random
+
+# losowe_liczby = [random.randint(1, 50) for _ in range(100)]
+# print(sorted(set(losowe_liczby)))
