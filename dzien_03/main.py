@@ -322,3 +322,9 @@
 
 #  komis = [Auto(64u4ju), Auto(aqgqg)]
 
+
+#### ZADANIE 23
+
+# Przygotuj listę 100 losowych liczb z zakresu 1-50.
+# Wyświetl na konsoli unikalne liczby w kolejności rosnącej.
+
