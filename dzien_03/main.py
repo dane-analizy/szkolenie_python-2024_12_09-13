@@ -147,3 +147,37 @@
 
 # k4 = tuple(sorted(k3, reverse=True))
 # print(k4)
+
+# czy lista jest pusta?
+# l = [1]
+# if l:
+#     print("lista nie pusta")
+# else:
+#     print("lista jest pusta")
+
+
+# iterowanie po pustej kolekcji:
+#  l = ["a", "b", "c"]
+# l = []
+# for i, el in enumerate(l):
+#     print(i, el)
+
+
+# lista plików: os.walk vs pathlib
+
+# import os
+
+# for s in os.walk(".."):
+#     # print(s) (aktualny katalog, lista katalogów, lista plików)
+#     print(f"ŚCIEŻKA: {s[0]}")
+#     print("=== Pliki:")
+#     for p in s[2]:
+#         nazwa_pliku = os.path.join(s[0], p)
+#         print(f"\t{nazwa_pliku}")
+
+#     print("=== Katalogi:")
+#     for k in s[1]:
+#         nazwa_katalogu = os.path.join(s[0], k)
+#         print(f"\t{nazwa_katalogu}")
+
+#     print()
