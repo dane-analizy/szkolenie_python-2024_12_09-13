@@ -370,3 +370,10 @@
 
 # Korzystając z pakietu Faker wygeneruj plik CSV zawierający 10 tysięcy rekordów zawierających:
 # id będące liczbą porządkową, imię, nazwisko, nazwa firmy, email, telefon, miasto, ulica i numer domu
+
+# 1. import Fakera
+# 2. inicjalizacja klasy
+f = Faker("pl_PL")
+# 3. w pętli 10 tysięcy razy generujemy odpowiednie "składkowe" 
+# 4. scalamy w jedną linię rozdzieloną ;
+# 5. zapisujemy do pliku
