@@ -423,8 +423,30 @@
 # print(w)
 
 
-from utils.file import load_data, clean_data
 
-zaladowane_dane = load_data("zawodnicy.csv")
-gotowe_dane = clean_data(zaladowane_dane)
-print(gotowe_dane)
+# kod który wykorzystuje napisane pakietty/moduły:
+# from utils.file import load_data, clean_data
+
+# zaladowane_dane = load_data("zawodnicy.csv")
+# gotowe_dane = clean_data(zaladowane_dane)
+# print(gotowe_dane)
+
+#### ZADANIE 30
+
+# Uzupełnij moduł utils.file o funkcję zapisującą dane do pliku JSON. Dane pochodzą z wyniku działania funkcji clean_data().
+
+# funkcja 1:
+# osoby = [
+#     {
+#         "imie": "Tom",
+#         "nazwisko": "Cruise",
+#         "wzrost": 170.0,
+#         "waga":68.0,
+#         "bmi": 23.529
+#     },
+#     {},
+#     {}
+# ]
+
+# funkcja 2:
+# json.dump(osoby, plik)
