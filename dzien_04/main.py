@@ -453,10 +453,55 @@
 # rozwiązanie - funkcje change_data() i save_data_to_json() w utils/file.py
 
 
-from utils.file import load_data, clean_data, change_data, save_data_to_json
+# from utils.file import load_data, clean_data, change_data, save_data_to_json
 
-zaladowane_dane = load_data("zawodnicy.csv")
-gotowe_dane = clean_data(zaladowane_dane)
-dane_zmienione = change_data(gotowe_dane)
-print(dane_zmienione)
-save_data_to_json(dane_zmienione, "zawodnicy.json")
+# zaladowane_dane = load_data("zawodnicy.csv")
+# gotowe_dane = clean_data(zaladowane_dane)
+# dane_zmienione = change_data(gotowe_dane)
+# print(dane_zmienione)
+# save_data_to_json(dane_zmienione, "zawodnicy.json")
+
+
+### usługi sieciowe - pakiet: requests
+# https://httpbin.org/
+# https://it-tools.tech/ -> HTTP status codes
+
+# pip install requests
+# python -m pip install requests
+
+# import requests
+
+# requests.get()
+# requests.post()
+# requests.delete()
+# requests.put()
+# requests.patch()
+
+# res = requests.get("https://onet.pl/")
+# print(res)
+# if res.status_code != 200:
+#     print(f"jakiś błąd, {res.status_code}")
+
+# print(res.content)
+# print(res.text)
+
+
+
+# API NBP -> https://api.nbp.pl/
+
+import requests
+
+url = "https://api.nbp.pl/api/exchangerates/tables/A/2024-12-12?format=json"
+# url = "https://onet.pl"
+
+res = requests.get(url)
+
+if res.status_code != 200:
+    print(f"jakiś błąd, {res.status_code}")
+
+dane = res.json()
+dane = dane[0]
+
+print(type(dane))
+# print(dane)
+print(dane.keys())
