@@ -1,0 +1,3 @@
+klucz=wartość
+login=jkowalski
+haslo=AlaMaKota_123!
