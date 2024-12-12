@@ -325,7 +325,7 @@
 #     for a in args:
 #         print(a)
 #     print("koniec\n")
-        
+
 # fun(1)
 # fun(1,2,3)
 # fun([1,23,4,5,7])
@@ -335,7 +335,7 @@
 #     print(kwargs)
 #     for k,v in kwargs.items():
 #         print(k, v)
-    
+
 #     if "a" in kwargs.keys():
 #         print(f"Robię czynność zależą od a {kwargs['a']=}")
 #     print("koniec\n")
@@ -347,7 +347,7 @@
 #     if kwargs['typ'] == 'linia':
 #         rysuj_wykres_liniowy(dane)
 
-        
+
 # moduły = zbiory funkcji -> zobacz plik obliczenia.py
 
 # # import całego modułu
@@ -394,13 +394,11 @@
 # a.opis()
 
 
-
 # import testowy
 # print("plik main.py", __name__)
 
 # if __name__ == "__main__":
 #     print("Uruchomiłeś skrypt main.py")
-
 
 
 # pakiet = zbiór modułów
@@ -423,7 +421,6 @@
 # print(w)
 
 
-
 # kod który wykorzystuje napisane pakietty/moduły:
 # from utils.file import load_data, clean_data
 
@@ -433,7 +430,8 @@
 
 #### ZADANIE 30
 
-# Uzupełnij moduł utils.file o funkcję zapisującą dane do pliku JSON. Dane pochodzą z wyniku działania funkcji clean_data().
+# Uzupełnij moduł utils.file o funkcję zapisującą dane do pliku JSON.
+# Dane pochodzą z wyniku działania funkcji clean_data().
 
 # funkcja 1:
 # osoby = [
@@ -450,3 +448,15 @@
 
 # funkcja 2:
 # json.dump(osoby, plik)
+
+
+# rozwiązanie - funkcje change_data() i save_data() w utils/file.py
+
+
+from utils.file import load_data, clean_data, change_data, save_data_to_json
+
+zaladowane_dane = load_data("zawodnicy.csv")
+gotowe_dane = clean_data(zaladowane_dane)
+dane_zmienione = change_data(gotowe_dane)
+print(dane_zmienione)
+save_data_to_json(dane_zmienione, "zawodnicy.json")

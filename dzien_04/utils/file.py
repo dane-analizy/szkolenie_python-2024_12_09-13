@@ -1,5 +1,5 @@
 from pathlib import Path
-
+import json
 from utils.calc import bmi
 
 
@@ -26,3 +26,22 @@ def clean_data(dane):
         dane_wynikowe.append([imie, nazwisko, wzrost, waga, wbmi])
 
     return dane_wynikowe
+
+
+def change_data(dane):
+    wynikowe_dane = []
+    for r in dane:
+        temp_dict = {
+            "imie": r[0],
+            "nazwisko": r[1],
+            "wzrost": r[2],
+            "waga": r[3],
+            "bmi": r[4],
+        }
+        wynikowe_dane.append(temp_dict)
+        
+    return wynikowe_dane
+
+def save_data_to_json(dane, nazwa_pliku):
+    with open(nazwa_pliku, "w", encoding="utf-8") as f:
+        json.dump(dane, f, indent=4)

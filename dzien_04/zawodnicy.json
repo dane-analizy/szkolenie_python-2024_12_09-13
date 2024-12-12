@@ -1,0 +1,107 @@
+[
+    {
+        "imie": "Tom",
+        "nazwisko": "Cruise",
+        "wzrost": 170.0,
+        "waga": 68.0,
+        "bmi": 23.529411764705884
+    },
+    {
+        "imie": "Scarlett",
+        "nazwisko": "Johansson",
+        "wzrost": 160.0,
+        "waga": 57.0,
+        "bmi": 22.265624999999996
+    },
+    {
+        "imie": "Dwayne",
+        "nazwisko": "Johnson",
+        "wzrost": 196.0,
+        "waga": 118.0,
+        "bmi": 30.716368179925034
+    },
+    {
+        "imie": "Taylor",
+        "nazwisko": "Swift",
+        "wzrost": 180.0,
+        "waga": 62.0,
+        "bmi": 19.1358024691358
+    },
+    {
+        "imie": "Barack",
+        "nazwisko": "Obama",
+        "wzrost": 185.0,
+        "waga": 79.0,
+        "bmi": 23.08254200146092
+    },
+    {
+        "imie": "Angelina",
+        "nazwisko": "Jolie",
+        "wzrost": 169.0,
+        "waga": 54.0,
+        "bmi": 18.906901018871892
+    },
+    {
+        "imie": "Chris",
+        "nazwisko": "Hemsworth",
+        "wzrost": 191.0,
+        "waga": 91.0,
+        "bmi": 24.94449165318933
+    },
+    {
+        "imie": "Emma",
+        "nazwisko": "Watson",
+        "wzrost": 165.0,
+        "waga": 53.0,
+        "bmi": 19.467401285583104
+    },
+    {
+        "imie": "Leonardo",
+        "nazwisko": "DiCaprio",
+        "wzrost": 183.0,
+        "waga": 75.0,
+        "bmi": 22.395413419331717
+    },
+    {
+        "imie": "Jennifer",
+        "nazwisko": "Lawrence",
+        "wzrost": 171.0,
+        "waga": 63.0,
+        "bmi": 21.545090797168363
+    },
+    {
+        "imie": "Elon",
+        "nazwisko": "Musk",
+        "wzrost": 188.0,
+        "waga": 82.0,
+        "bmi": 23.20054323223178
+    },
+    {
+        "imie": "Beyonce",
+        "nazwisko": "Knowles",
+        "wzrost": 170.0,
+        "waga": 65.0,
+        "bmi": 22.49134948096886
+    },
+    {
+        "imie": "Keanu",
+        "nazwisko": "Reeves",
+        "wzrost": 186.0,
+        "waga": 79.0,
+        "bmi": 22.835009827725745
+    },
+    {
+        "imie": "Ariana",
+        "nazwisko": "Grande",
+        "wzrost": 153.0,
+        "waga": 49.0,
+        "bmi": 20.932120124738347
+    },
+    {
+        "imie": "Morgan",
+        "nazwisko": "Freeman",
+        "wzrost": 188.0,
+        "waga": 79.0,
+        "bmi": 22.351742870076958
+    }
+]
