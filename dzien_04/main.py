@@ -48,6 +48,8 @@
 # for el1, el2 in zip(l1, l2):
 #     print(el1, el2)
 
+# slownik = {el1:el2 for el1, el2 in zip(l1, l2)}
+
 
 # co z długością list? - brana jest długość najkrótszej listy
 # l1 = [1, 2, 3, 4, 5, 6]
@@ -369,8 +371,8 @@
 
 # # # import pojedynczych funkcji
 # from obliczenia import dodawanie, odejmowanie
-# from klasa import Auto
-# import pusty_modul
+# 
+# import pufrom klasa import Autosty_modul
 
 # # print(pusty_modul.imie)
 # # print(pusty_modul.wynik)
