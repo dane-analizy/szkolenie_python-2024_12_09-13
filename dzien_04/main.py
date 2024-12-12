@@ -413,5 +413,5 @@
 
 #### ZADANIE 29
 
-# Zbuduj pakiet bmi, w którym znajdzie się moduł calc. W module calc przygotuj funkcję bmi() wyliczającą
+# Zbuduj pakiet utils, w którym znajdzie się moduł calc. W module calc przygotuj funkcję bmi() wyliczającą
 # ten współczynnik z podanych parametrów.
