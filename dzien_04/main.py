@@ -539,9 +539,8 @@ import requests
 
 
 def nbp_rates(rok=2024, miesiac=9, dzien=1, obslugiwane_waluty=["EUR", "CHF", "USD"]):
-    
     wyniki = {"data": f"{rok}-{miesiac:02}-{dzien:02}"}
- 
+
     url = f"https://api.nbp.pl/api/exchangerates/tables/A/{rok}-{miesiac:02}-{dzien:02}?format=json"
     res = requests.get(url)
     
@@ -569,7 +568,14 @@ def nbp_rates(rok=2024, miesiac=9, dzien=1, obslugiwane_waluty=["EUR", "CHF", "U
 
 
 # wszystkie notowania z listopada
-for m in range(1,13):
-    for d in range(1,32):
-        notowanie = nbp_rates(miesiac=m, dzien=d, obslugiwane_waluty=['CHF', "JPY", "CAD", "EUR"])
-        print(notowanie)
+# for m in range(1,13):
+#     for d in range(1,32):
+#         notowanie = nbp_rates(miesiac=m, dzien=d, obslugiwane_waluty=['CHF', "JPY", "CAD", "EUR"])
+#         print(notowanie)
+        
+
+r = int(input("rok "))
+m = int(input("miesiac "))
+d = int(input("dzien "))
+
+print(nbp_rates(r, m, d))
