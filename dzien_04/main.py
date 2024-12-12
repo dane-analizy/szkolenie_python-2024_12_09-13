@@ -489,19 +489,32 @@
 
 # API NBP -> https://api.nbp.pl/
 
-import requests
+# import requests
 
-url = "https://api.nbp.pl/api/exchangerates/tables/A/2024-12-12?format=json"
-# url = "https://onet.pl"
+# url = "https://api.nbp.pl/api/exchangerates/tables/A/2024-12-12?format=json"
+# # url = "https://onet.pl"
 
-res = requests.get(url)
+# res = requests.get(url)
 
-if res.status_code != 200:
-    print(f"jakiś błąd, {res.status_code}")
+# if res.status_code != 200:
+#     print(f"jakiś błąd, {res.status_code}")
 
-dane = res.json()
-dane = dane[0]
+# dane = res.json()
+# dane = dane[0]
 
-print(type(dane))
-# print(dane)
-print(dane.keys())
+# print(type(dane))
+# # print(dane)
+# print(dane.keys())
+
+
+
+#### ZADANIE 31
+
+# Korzystając z API NBP pobierz dzisiejsze notowania walut i wyświetl kurs EUR, CHF i USD na konsoli.
+
+# import requests
+# odpytać api -> requests.get(url)
+# wyjąć z odpowiedzi jsona
+# przejść w pętli przez listę z klucza "rates"
+# wyświetlić te waluty, które chcemy
+
