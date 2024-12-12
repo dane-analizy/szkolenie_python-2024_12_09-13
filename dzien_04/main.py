@@ -400,3 +400,18 @@
 
 # if __name__ == "__main__":
 #     print("Uruchomiłeś skrypt main.py")
+
+
+
+# pakiet = zbiór modułów
+# import pakiet.calc
+# from pakiet import db
+
+# pakiet.calc.dodawanie(1,3)
+# db.open_db()
+
+
+#### ZADANIE 29
+
+# Zbuduj pakiet bmi, w którym znajdzie się moduł calc. W module calc przygotuj funkcję bmi() wyliczającą
+# ten współczynnik z podanych parametrów.
