@@ -174,9 +174,9 @@
 
 
 # funkcje z parametrami
-def dodawanie(a, b):
-    wynik = a + b
-    print(f"{a} + {b} = {wynik}")
+# def dodawanie(a, b):
+#     wynik = a + b
+#     print(f"{a} + {b} = {wynik}")
 
 
 # dodawanie(10, 5)
@@ -208,18 +208,28 @@ def dodawanie(a, b):
 # a = 10
 # def
 
-def mnozenie(a: float | int, b: float | int) -> float | None:
-    if not isinstance(a, (int, float)):
-        print(f"a ({a}) musi być float")
-        return None
+# def mnozenie(a: float | int, b: float | int) -> float | None:
+#     if not isinstance(a, (int, float)):
+#         print(f"a ({a}) musi być float")
+#         return None
 
-    if not isinstance(b, (int, float)):
-        print(f"b ({b}) musi być float")
-        return None
+#     if not isinstance(b, (int, float)):
+#         print(f"b ({b}) musi być float")
+#         return None
 
-    wynik = a * b
-    print(f"{a} * {b} = {wynik}")
-    return float(wynik)
+#     wynik = a * b
+#     print(f"{a} * {b} = {wynik}")
+#     return float(wynik)
 
-mnozenie( [1,2,3] , 67.7)
-mnozenie(1, 34.56)
+# mnozenie( [1,2,3] , 67.7)
+# mnozenie(1, 34.56)
+
+
+
+#### ZADANIE 28
+
+# Przygotuj funkcję, która wyliczy na podstawie wagi i wzrostu (parametry) BMI z dokładnością
+# do 2 miejsc po przecinku.
+# W przypadku pojawienia się wyjątku - wypisze na konsoli błąd i zwróci wartość -1
+
+# bmi = waga / wzrost^2
