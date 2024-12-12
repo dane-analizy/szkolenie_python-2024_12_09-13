@@ -151,3 +151,10 @@
 
 # Wyświetl wynik dzielenia jedynki przez kolejne liczby z zakresu od -10 do 10.
 # Jeżeli zajdzie jakiś błąd - napisz na konsoli co to za błąd i działaj dalej.
+
+# for i in range(-10, 10):
+#     try:
+#         wynik = 1 / i
+#         print(wynik)
+#     except Exception as e:
+#         print("BLAD : ", type(e))
