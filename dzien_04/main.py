@@ -450,7 +450,7 @@
 # json.dump(osoby, plik)
 
 
-# rozwiązanie - funkcje change_data() i save_data() w utils/file.py
+# rozwiązanie - funkcje change_data() i save_data_to_json() w utils/file.py
 
 
 from utils.file import load_data, clean_data, change_data, save_data_to_json
