@@ -87,10 +87,9 @@
 
 # # słowa występujące nie więcej niż 100 razy
 # for k,v in zliczenie.items():
-#     print(k,v)    
+#     print(k,v)
 #     if v < 100:
 #         break
-
 
 
 # wyjątki
@@ -99,7 +98,7 @@
 #     spróbuj coś zrobić
 # except:
 #     zrób to, jesli nie udało się tego wyżej
-    
+
 # liczba = 0
 # wynik = 1/liczba
 # print(wynik)
@@ -113,7 +112,7 @@
 #     print("wynik:", wynik)
 # except:
 #     print("błąd")
-    
+
 # print("program idzie dalej")
 
 
@@ -146,7 +145,6 @@
 # raise TypeError
 
 
-
 #### ZADANIE 27
 
 # Wyświetl wynik dzielenia jedynki przez kolejne liczby z zakresu od -10 do 10.
@@ -158,3 +156,19 @@
 #         print(wynik)
 #     except Exception as e:
 #         print("BLAD : ", type(e))
+
+
+# funkcje => DRY = Don't Repeat Yourself
+
+
+def nazwa_funkcji():
+    # ciałko funkcji
+    print("Dzień dobry")
+    for i in range(5):
+        print(i)
+    print("Kończę funkcję")
+
+
+for licznik in range(4):
+    print(licznik)
+    nazwa_funkcji()
