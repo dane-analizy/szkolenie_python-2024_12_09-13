@@ -371,8 +371,8 @@
 
 # # # import pojedynczych funkcji
 # from obliczenia import dodawanie, odejmowanie
-# 
-# import pufrom klasa import Autosty_modul
+# from klasa import Auto
+# import pusty_modul
 
 # # print(pusty_modul.imie)
 # # print(pusty_modul.wynik)
@@ -557,10 +557,8 @@ def nbp_rates(rok=2024, miesiac=9, dzien=1, obslugiwane_waluty=["EUR", "CHF", "U
     for waluta in kwotowania:
         if waluta["code"].upper() in obslugiwane_waluty:
             # print(f"{waluta['currency']} => {waluta['mid']}")
-            
             klucz = waluta["code"].upper()
             wyniki[klucz] = waluta["mid"]
-
             # print(wyniki)
 
     return wyniki
