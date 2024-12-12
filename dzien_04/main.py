@@ -415,3 +415,16 @@
 
 # Zbuduj pakiet utils, w którym znajdzie się moduł calc. W module calc przygotuj funkcję bmi() wyliczającą
 # ten współczynnik z podanych parametrów.
+
+
+# from utils.calc import bmi
+
+# w = bmi(180, 80)
+# print(w)
+
+
+from utils.file import load_data, clean_data
+
+zaladowane_dane = load_data("zawodnicy.csv")
+gotowe_dane = clean_data(zaladowane_dane)
+print(gotowe_dane)
