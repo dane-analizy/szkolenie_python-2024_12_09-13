@@ -11,7 +11,7 @@
 # print(slownik)
 
 
-#### ZADANIE 25
+#### ZADANIE 26
 
 # Wczytaj konfigurację z pliku konfiguracja.txt.
 # Budowa pliku to klucz=wartość w każdej linii.
@@ -117,23 +117,37 @@
 # print("program idzie dalej")
 
 
-d = {}
-liczba = 0
-try:
-    # print(zmienna) # NameError
-    # print(d["zmiena"]) # KeyError
-    print(1 + "auagu") # TypeError
-    print("spróbuję podzielić")
-    wynik = 1 / liczba # ZeroDivisionError
-    print("podzieliłem")
-    print("wynik:", wynik)
-except NameError:
-    print("wystąpił błąd NameError")
-except TypeError:
-    print("wystąpił Type error")
-except ZeroDivisionError:
-    print("nie dziel przez zero")
-except Exception as e:
-    print("błąd", e, type(e))
+# d = {}
+# liczba = 0
+# try:
+#     # print(zmienna) # NameError
+#     # print(d["zmiena"]) # KeyError
+#     print(1 + "auagu") # TypeError
+#     print("spróbuję podzielić")
+#     wynik = 1 / liczba # ZeroDivisionError
+#     print("podzieliłem")
+#     print("wynik:", wynik)
+# except NameError:
+#     print("wystąpił błąd NameError")
+# except TypeError:
+#     print("wystąpił Type error")
+# except ZeroDivisionError:
+#     print("nie dziel przez zero")
+# except Exception as e:
+#     print("błąd", e, type(e))
 
-print("program idzie dalej")
+# print("program idzie dalej")
+
+# try:
+#     raise ZeroDivisionError
+# except Exception as blad:
+#     print(blad, type(blad))
+
+# raise TypeError
+
+
+
+#### ZADANIE 27
+
+# Wyświetl wynik dzielenia jedynki przez kolejne liczby z zakresu od -10 do 10.
+# Jeżeli zajdzie jakiś błąd - napisz na konsoli co to za błąd i działaj dalej.
