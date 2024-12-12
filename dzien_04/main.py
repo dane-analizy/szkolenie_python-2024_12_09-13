@@ -564,5 +564,12 @@ def nbp_rates(rok=2024, miesiac=9, dzien=1, obslugiwane_waluty=["EUR", "CHF", "U
 
     return wyniki
 
-kursy = nbp_rates(miesiac=9, dzien=2)
-print(kursy)
+# kursy = nbp_rates(miesiac=9, dzien=2)
+# print(kursy)
+
+
+# wszystkie notowania z listopada
+for m in range(1,13):
+    for d in range(1,32):
+        notowanie = nbp_rates(miesiac=m, dzien=d, obslugiwane_waluty=['CHF', "JPY", "CAD", "EUR"])
+        print(notowanie)
