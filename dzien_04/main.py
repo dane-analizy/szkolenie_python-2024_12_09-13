@@ -346,4 +346,57 @@
 # def rysuj(dane, *args, **kwargs):
 #     if kwargs['typ'] == 'linia':
 #         rysuj_wykres_liniowy(dane)
+
         
+# moduły = zbiory funkcji -> zobacz plik obliczenia.py
+
+# # import całego modułu
+# import obliczenia
+
+# a = 10
+# b = 20
+
+# suma = obliczenia.dodawanie(a,b)
+# roznica = obliczenia.odejmowanie(a, b)
+# iloczyn = obliczenia.mnozenie(a,b)
+# iloraz = obliczenia.dzielenie(a, b)
+
+# print(f"{suma=}")
+# print(f"{roznica=}")
+# print(f"{iloczyn=}")
+# print(f"{iloraz=}")
+
+
+# # # import pojedynczych funkcji
+# from obliczenia import dodawanie, odejmowanie
+# from klasa import Auto
+# import pusty_modul
+
+# # print(pusty_modul.imie)
+# # print(pusty_modul.wynik)
+
+
+# a = 10
+# b = 20
+
+# suma = dodawanie(a,b)
+# roznica = odejmowanie(a, b)
+# # iloczyn = mnozenie(a,b)
+# # iloraz = dzielenie(a, b)
+
+# print(f"{suma=}")
+# print(f"{roznica=}")
+# # print(f"{iloczyn=}")
+# # print(f"{iloraz=}")
+
+# a = Auto()
+# a.kolor = "beżowy"
+# a.opis()
+
+
+
+# import testowy
+# print("plik main.py", __name__)
+
+# if __name__ == "__main__":
+#     print("Uruchomiłeś skrypt main.py")
