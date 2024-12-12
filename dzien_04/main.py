@@ -160,15 +160,66 @@
 
 # funkcje => DRY = Don't Repeat Yourself
 
+# funkcje bez parametrów:
+# def nazwa_funkcji():
+#     # ciałko funkcji
+#     print("Dzień dobry")
+#     for i in range(5):
+#         print(i)
+#     print("Kończę funkcję")
+# użycie funkcji
+# for licznik in range(4):
+#     print(licznik)
+#     nazwa_funkcji()
 
-def nazwa_funkcji():
-    # ciałko funkcji
-    print("Dzień dobry")
-    for i in range(5):
-        print(i)
-    print("Kończę funkcję")
+
+# funkcje z parametrami
+def dodawanie(a, b):
+    wynik = a + b
+    print(f"{a} + {b} = {wynik}")
 
 
-for licznik in range(4):
-    print(licznik)
-    nazwa_funkcji()
+# dodawanie(10, 5)
+# dodawanie(50, 100)
+
+
+# funkcje z parametrami i zwracające wartość
+# def mnozenie(a: float | int, b: float | int) -> float:
+#     wynik = a * b
+#     print(f"{a} * {b} = {wynik}")
+#     return float(wynik)
+
+
+# print("wywołuję funkcję:")
+# wynik_z_funkcji = mnozenie(4,6)
+# print("funkcja wykonana")
+# print(f"funkcja zwróciła wartość {wynik_z_funkcji}")
+
+# wynik_dodawania = dodawanie(1, 2)
+# wynik_mnozenia = mnozenie(5, 3)
+
+# print("wynik_dodawania:", wynik_dodawania)
+# print("wynik_mnozenia:", wynik_mnozenia)
+
+
+# mnozenie([1, 2, 3], [6, 7, 8])
+
+# zasięg zmiennych
+# a = 10
+# def
+
+def mnozenie(a: float | int, b: float | int) -> float | None:
+    if not isinstance(a, (int, float)):
+        print(f"a ({a}) musi być float")
+        return None
+
+    if not isinstance(b, (int, float)):
+        print(f"b ({b}) musi być float")
+        return None
+
+    wynik = a * b
+    print(f"{a} * {b} = {wynik}")
+    return float(wynik)
+
+mnozenie( [1,2,3] , 67.7)
+mnozenie(1, 34.56)
