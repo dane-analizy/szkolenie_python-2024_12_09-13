@@ -510,11 +510,30 @@
 
 #### ZADANIE 31
 
-# Korzystając z API NBP pobierz dzisiejsze notowania walut i wyświetl kurs EUR, CHF i USD na konsoli.
+# Korzystając z API NBP pobierz dzisiejsze notowania walut
+# i wyświetl kurs EUR, CHF i USD na konsoli.
 
 # import requests
 # odpytać api -> requests.get(url)
 # wyjąć z odpowiedzi jsona
 # przejść w pętli przez listę z klucza "rates"
 # wyświetlić te waluty, które chcemy
+
+
+# import requests
+
+# rok = 2024
+# miesiac = 12
+# dzien = 12
+
+# obslugiwane_waluty = ["EUR", "CHF", "USD", "JPY", "ILS"]
+
+# url = f"https://api.nbp.pl/api/exchangerates/tables/A/{rok}-{miesiac}-{dzien}?format=json"
+# res = requests.get(url)
+# dane = res.json()[0]
+
+# kwotowania = dane["rates"]
+# for waluta in kwotowania:
+#     if waluta["code"].upper() in obslugiwane_waluty:
+#         print(f"{waluta['currency']} => {waluta['mid']}")
 
