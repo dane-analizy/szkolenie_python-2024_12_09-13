@@ -225,7 +225,6 @@
 # mnozenie(1, 34.56)
 
 
-
 #### ZADANIE 28
 
 # Przygotuj funkcję, która wyliczy na podstawie wagi i wzrostu (parametry) BMI z dokładnością
@@ -267,6 +266,84 @@
 #     zapis_do_pliku_konkretnej_osoby(osoba, wskaznik_bmi)
 
 
-
 # zasięg zmiennych
+# def foo(a, b):
+#     print(f"w ciele funkcji: {a=}, {b=}, {c=}")
+
+# a = 0
+# b = 0
+# c = 3
+# print(f"przed wywołaniem funkcji: {a=}, {b=}, {c=}")
+# foo(1, 2)
+# print(f"po wywołaniu funkcji: {a=}, {b=}, {c=}")
+
+
+# def foo(a, b):
+#     c = a+b
+#     print(f"w ciele funkcji: {a=}, {b=}, {c=}")
+
+# a = 0
+# b = 0
+# c = 0
+# print(f"przed wywołaniem funkcji: {a=}, {b=}, {c=}")
+# foo(1, 2)
+# print(f"po wywołaniu funkcji: {a=}, {b=}, {c=}")
+
+
+# nadpisanie zmiennej globalnej
+# def foo(a, b):
+#     global c
+#     c = 5
+#     print(f"w ciele funkcji: {a=}, {b=}, {c=}")
+
+# a = 0
+# b = 0
+# c = 1000
+# print(f"przed wywołaniem funkcji: {a=}, {b=}, {c=}")
+# foo(1, 2)
+# print(f"po wywołaniu funkcji: {a=}, {b=}, {c=}")
+
+
 # argumenty domyślne
+
+
+# def funkcja(a=1, b=2, c=3):
+#     suma = a + b + c
+#     print(f"{a=} + {b=} + {c=} = {suma}")
+
+
+# funkcja(10, 20, 5)
+# funkcja(b=10)
+# # a, b, c
+# funkcja(b=10, c=45, a=50)
+# funkcja(5, c=1000)
+
+
+# dowolna liczba argumentów pozycyjnych
+# def fun(*args):
+#     print(args)
+#     for a in args:
+#         print(a)
+#     print("koniec\n")
+        
+# fun(1)
+# fun(1,2,3)
+# fun([1,23,4,5,7])
+
+# dowolna liczba argumentów nazwanych
+# def fun(**kwargs):
+#     print(kwargs)
+#     for k,v in kwargs.items():
+#         print(k, v)
+    
+#     if "a" in kwargs.keys():
+#         print(f"Robię czynność zależą od a {kwargs['a']=}")
+#     print("koniec\n")
+
+
+# fun(b=123, c="aequg", d={"o": 5})
+
+# def rysuj(dane, *args, **kwargs):
+#     if kwargs['typ'] == 'linia':
+#         rysuj_wykres_liniowy(dane)
+        
