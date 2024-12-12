@@ -233,3 +233,40 @@
 # W przypadku pojawienia się wyjątku - wypisze na konsoli błąd i zwróci wartość -1
 
 # bmi = waga / wzrost^2
+
+
+# def bmi_calc(masa, wzrost):
+#     try:
+#         bmi = float(masa) / float(wzrost / 100) ** 2
+#         print(f"Twoje BMI to: {bmi:.2f}")
+#         return bmi
+#     except Exception as e:
+#         print("wystąpił błąd:", e)
+#         return -1
+
+
+# bmi_calc(70, 167)
+
+# po co to wszytko?
+
+
+# try:
+#     ...
+# except Exception as blad:
+#     print("błąd:", blad)
+#     return -1
+
+
+# for osoba in lista:
+
+#     wskaznik_bmi = bmi(osoba['wzrost'], osoba['waga'])
+#     if wskaznik_bmi == -1:
+#         zapis_do_pliku_z_bledami(osoba)
+#         continue
+
+#     zapis_do_pliku_konkretnej_osoby(osoba, wskaznik_bmi)
+
+
+
+# zasięg zmiennych
+# argumenty domyślne
