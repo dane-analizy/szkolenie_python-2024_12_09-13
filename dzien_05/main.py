@@ -85,16 +85,115 @@
 # db_connection.close()
 
 
+# # wstawianie danych do bazy
+
+# from pathlib import Path
+# import yaml
+# from sqlalchemy import create_engine, text
+
+# # CONFIG_FILE = "db_config.yaml"
+# CONFIG_FILE = "db_config_lukasz.yaml"
+
+# def load_config(nazwa_pliku, enc="utf-8"):
+#     if not Path(nazwa_pliku).exists():
+#         print(f"Plik {nazwa_pliku} nie istnieje")
+#         return {}
+#     with open(nazwa_pliku, "r", encoding=enc) as p:
+#         config = yaml.safe_load(p)
+#         return config
+#     return {}
 
 
-# wstawianie danych do bazy
+# config = load_config(CONFIG_FILE)
+# db_conn_str = f"postgresql+psycopg2://{config['db_user']}:{config['db_pass']}@{config['db_host']}:{config['db_post']}/{config['db_name']}"
+# db_engine = create_engine(db_conn_str)
+# db_connection = db_engine.connect()
+
+# # zapytanie do bazy
+# sql_query = """
+# INSERT INTO players (first_name,last_name,height,weight)
+# VALUES ('Zosia','Samosia', 182, 78);
+# """
+
+# # wykonujemy zapytanie SQLowe:
+# results = db_connection.execute(text(sql_query))
+# print(results)
+# results = db_connection.commit()
+# print(results)
+
+
+# # rozłączenie od bazy
+# db_connection.close()
+
+
+# # wstawianie danych do bazy z parametrami
+
+# from pathlib import Path
+# import yaml
+# from sqlalchemy import create_engine, text
+
+# # CONFIG_FILE = "db_config.yaml"
+# CONFIG_FILE = "db_config_lukasz.yaml"
+
+
+# def load_config(nazwa_pliku, enc="utf-8"):
+#     if not Path(nazwa_pliku).exists():
+#         print(f"Plik {nazwa_pliku} nie istnieje")
+#         return {}
+#     with open(nazwa_pliku, "r", encoding=enc) as p:
+#         config = yaml.safe_load(p)
+#         return config
+#     return {}
+
+
+# config = load_config(CONFIG_FILE)
+# db_conn_str = f"postgresql+psycopg2://{config['db_user']}:{config['db_pass']}@{config['db_host']}:{config['db_post']}/{config['db_name']}"
+# db_engine = create_engine(db_conn_str)
+# db_connection = db_engine.connect()
+
+
+# rekordy = [
+#     {
+#         "imie": "Halina",
+#         "nazwisko": "Kowalska-Bąk",
+#         "wzrost": 165,
+#         "waga": 59,
+#     },
+#     {"imie": "Krystyna", "nazwisko": "Góral", "wzrost": 171, "waga": 58},
+#     {"imie": "Maria", "nazwisko": "Iksińska", "wzrost": .84, "waga": 65}
+# ]
+
+# for rekord in rekordy:
+#     imie = rekord['imie']
+#     nazwisko = rekord['nazwisko']
+#     wzrost = rekord['wzrost']
+#     waga = rekord['waga']
+
+#     # zapytanie do bazy
+#     sql_query = f"""
+#     INSERT INTO players (first_name,last_name,height,weight)
+#     VALUES ('{imie}','{nazwisko}', {wzrost}, {waga});
+#     """
+
+#     # wykonujemy zapytanie SQLowe:
+#     results = db_connection.execute(text(sql_query))
+#     results = db_connection.commit()
+
+
+# # rozłączenie od bazy
+# db_connection.close()
+
+
+# wstawianie danych do bazy z parametrami - podejście 2
 
 from pathlib import Path
+
 import yaml
 from sqlalchemy import create_engine, text
 
 # CONFIG_FILE = "db_config.yaml"
 CONFIG_FILE = "db_config_lukasz.yaml"
+
 
 def load_config(nazwa_pliku, enc="utf-8"):
     if not Path(nazwa_pliku).exists():
@@ -111,17 +210,28 @@ db_conn_str = f"postgresql+psycopg2://{config['db_user']}:{config['db_pass']}@{c
 db_engine = create_engine(db_conn_str)
 db_connection = db_engine.connect()
 
-# zapytanie do bazy
-sql_query = """
-INSERT INTO players (first_name,last_name,height,weight)
-VALUES ('Zosia','Samosia', 182, 78);
-"""
 
-# wykonujemy zapytanie SQLowe:
-results = db_connection.execute(text(sql_query))
-print(results)
-results = db_connection.commit()
-print(results)
+rekordy = [
+    {
+        "imie": "Druga Halina",
+        "nazwisko": "Kowalska-Bąk",
+        "wzrost": 165,
+        "waga": 59,
+    },
+    {"imie": "Druga Krystyna", "nazwisko": "Góral", "wzrost": 171, "waga": 58},
+    {"imie": "Druga Maria", "nazwisko": "Iksińska", "wzrost": 184, "waga": 65},
+]
+
+for rekord in rekordy:
+    # zapytanie do bazy - zwróć uwagę na : przy VALUES()
+    sql_query = """
+    INSERT INTO players (first_name,last_name,height,weight)
+    VALUES (:imie, :nazwisko, :wzrost, :waga);
+    """
+
+    # wykonujemy zapytanie SQLowe:
+    results = db_connection.execute(text(sql_query), rekord)
+    results = db_connection.commit()
 
 
 # rozłączenie od bazy
