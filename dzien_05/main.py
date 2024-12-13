@@ -56,7 +56,16 @@ db_engine = create_engine(db_conn_str)
 db_connection = db_engine.connect()
 # print(db_connection)
 
+# wykonujemy zapytanie SQLowe:
 results = db_connection.execute(text("SELECT * FROM players;"))
+
+# wynikiem jest kursor
 print(results)
+
+# wyświetlamy kolejne rekordy z kursora
+for i, r in enumerate(results):
+    print(f"Rekord {i}:")
+    print(r, end="\n\n")
+
 
 db_connection.close()
