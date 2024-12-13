@@ -21,7 +21,9 @@
 # Napisz funkcję load_config(), która z podanego jako argument pliku YAML wczyta jego zawartość
 # i zwróci w postaci słownika.
 
-import yaml
+# zainstaluj potrzebne pakiety:
+# pip install PyYAML SQLAlchemy psycopg2
+import yaml 
 from pathlib import  Path
 
 # importy dla sqlalchemy:
