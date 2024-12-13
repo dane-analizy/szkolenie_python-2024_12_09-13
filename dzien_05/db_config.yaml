@@ -1,5 +1,7 @@
+db_type: "postgresql" # "sqlite"
 db_host: localhost
 db_post: 5432
 db_user: postgres
 db_pass: Password!
 db_name: postgres
+db_sqlite_file: baza_danych.sqlite

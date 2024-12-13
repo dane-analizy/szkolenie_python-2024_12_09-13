@@ -234,5 +234,6 @@ for rekord in rekordy:
     results = db_connection.commit()
 
 
+
 # rozłączenie od bazy
 db_connection.close()
