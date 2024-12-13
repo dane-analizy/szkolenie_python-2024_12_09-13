@@ -12,6 +12,11 @@ Repozytorium zawiera materiały ze [szkolenia z podstaw Pythona](https://jsystem
 
 - [blog](https://blog.jsystems.pl/show_post/Bezp%C5%82atny_kurs_Python_od_podstaw/)
 - [podręcznik](https://jsystems.pl/static/andrzejklusiewicz/PNL.pdf)
+- https://www.youtube.com/@NeuralNine
+- https://www.youtube.com/@ArjanCodes
+- https://www.youtube.com/@realpython
+- https://www.youtube.com/@freecodecamp
+- https://www.youtube.com/@Gromobrody/videos
 
 ## Kontakt z prowadzącym
 
