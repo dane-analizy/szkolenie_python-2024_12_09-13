@@ -7,7 +7,7 @@ def make_conn_str(config):
     db_type = config.get("db_type", "postgresql")
 
     if db_type == "sqlite":
-        return f"sqlite://{config['db_sqlite_file']}"
+        return f"sqlite:///{config['db_sqlite_file']}"
 
     if "db_host" not in config.keys():
         print("Brak klucza 'db_host' w konfiguracji")
@@ -71,7 +71,7 @@ def select_from_db(db_conn, sql_query):
 def insert_to_db(db_conn, table_name, record):
     """insert słownika do bazy: parametry to db_connection, nazwa tabeli i słownik z danymi"""
     kolumny = ",".join(record.keys())
-    wartosci = ":" + ",".join(record.keys())
+    wartosci = ":" + ", :".join(record.keys())
 
     query = f"INSERT INTO {table_name} ({kolumny}) VALUES ({wartosci})"
 

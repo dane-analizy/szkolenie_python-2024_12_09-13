@@ -11,4 +11,3 @@ def load_config(nazwa_pliku, enc="utf-8"):
         config = yaml.safe_load(p)
         return config
     return {}
-    return {}
