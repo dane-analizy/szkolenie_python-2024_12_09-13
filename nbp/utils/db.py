@@ -7,6 +7,7 @@ db_engine = create_engine(....)
 db_connection = db_engine.connect()
 return db_connection
 
+
 # wykonanie zapytania typu select z bazy: parametr to zapytanie i db_connection, zwraca LISTĘ wyników
 res = db_connection.execute(text(...))
 wyniki = res.all()
