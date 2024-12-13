@@ -18,5 +18,10 @@ def produkty():
     return render_template("produkty.html")
 
 
+@app.route("/promocje")
+def promocje():
+    return render_template("promocje.html")
+
+
 if __name__ == "__main__":
     app.run()
