@@ -9,7 +9,8 @@ from utils.nbp import nbp_rates
 # stałe konfiguracyjne
 # CONFIG_FILE = "db_config.yaml"
 CONFIG_FILE = "db_config_lukasz.yaml"
-LISTA_WALUT = ["EUR", "CHF", "GBP", "USD"]
+# LISTA_WALUT = ["EUR", "CHF", "GBP", "USD"]
+LISTA_WALUT = ["JPY", "RUB"]
 ROK = 2024
 
 # rozważ użycie sys.argv do pobrania argumentów z konsoli

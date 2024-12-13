@@ -1,0 +1,26 @@
+<html>
+
+<head>
+    <title>Kursy walut</title>
+</head>
+
+<body>
+    <h1>Kurs waluty</h1>
+    <table border="1" cellpadding="5">
+        <tr>
+            <td>Data</td>
+            <td>Waluta</td>
+            <td>Kurs</td>
+        </tr>
+        {% for n in notowania %}
+        <tr>
+            <td>{{ n.data }}</td>
+            <td>{{ n.waluta }}</td>
+            <td>{{ n.kurs }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+</body>
+
+</html>

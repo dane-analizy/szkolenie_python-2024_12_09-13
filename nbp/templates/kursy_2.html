@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waluty i Kursy</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
+        }
+
+        header {
+            margin-bottom: 20px;
+        }
+
+        label {
+            margin-right: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid #ddd;
+        }
+
+        th,
+        td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f4f4f4;
+        }
+    </style>
+    <script>
+        function handleButtonClick() {
+            const currency = document.getElementById('currency').value;
+            const dateFrom = document.getElementById('dateFrom').value;
+            const dateTo = document.getElementById('dateTo').value;
+
+            if (currency && dateFrom && dateTo) {
+                const newUrl = `/kurs/${currency}/${dateFrom}/${dateTo}`;
+                // -> /kurs/eur/2024-01-02/2024-05-04
+                window.location.href = newUrl;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <label for="currency">Wybierz walutę:</label>
+        <select id="currency">
+            {% for w in dostepne_waluty %}
+            <option value="{{ w.waluta }}">{{ w.waluta }}</option>
+            {% endfor %}
+        </select>
+
+        <label for="dateFrom">Data od:</label>
+        <input type="date" id="dateFrom">
+
+        <label for="dateTo">Data do:</label>
+        <input type="date" id="dateTo">
+
+        <button onclick="handleButtonClick()">Pokaż kursy</button>
+    </header>
+    <main>
+        <h3>Notowania {{ curr_wal }}</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Data</th>
+                    <th>Kurs</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for notowanie in kursy %}
+                <tr>
+                    <td>{{ notowanie.data }}</td>
+                    <td>{{ notowanie.kurs }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </main>
+</body>
+
+</html>
