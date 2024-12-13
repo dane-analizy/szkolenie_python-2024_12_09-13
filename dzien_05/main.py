@@ -20,3 +20,18 @@
 
 # Napisz funkcję load_config(), która z podanego jako argument pliku YAML wczyta jego zawartość
 # i zwróci w postaci słownika.
+
+import yaml
+from pathlib import  Path
+
+def load_config(nazwa_pliku, enc="utf-8"):
+    if not Path(nazwa_pliku).exists():
+        print(f"Plik {nazwa_pliku} nie istnieje")
+        return {}
+    with open(nazwa_pliku, "r", encoding=enc) as p:
+        config = yaml.safe_load(p)
+        return config
+    return {}
+
+dbc = load_config("db_config.yaml")
+print(dbc)
