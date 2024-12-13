@@ -1,4 +1,4 @@
-from flask import Flask, render_template, redirect
+from flask import Flask, redirect, render_template
 from utils.config import load_config
 from utils.db import connect_to_db, disconnect_from_db, make_conn_str, select_from_db
 
@@ -29,6 +29,7 @@ def kwotowania(waluta="EUR", data_od="2024-12-01", data_do="2024-12-31"):
     disconnect_from_db(db_conn)
     return wyniki
 
+
 def lista_walut():
     db_conn = connect_to_db(db_str)
     wyniki = select_from_db(db_conn, "SELECT DISTINCT waluta FROM waluty;")
@@ -47,6 +48,7 @@ def kurs(waluta, od, do):
 @app.route("/")
 def hp():
     return redirect("/kurs/eur/2024-01-01/2024-12-31")
+
 
 if __name__ == "__main__":
     app.run(debug=True)
