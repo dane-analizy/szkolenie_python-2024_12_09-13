@@ -14,4 +14,9 @@
 
 # connection string - adres do bazy danych
 
-conn_str = f"postgres://{db_user}:{db_pass}@{db_host}:{db_post}/{db_name}"
+# conn_str = f"postgres+psycopg2://{db_user}:{db_pass}@{db_host}:{db_post}/{db_name}"
+
+#### ZADANIE 32
+
+# Napisz funkcję load_config(), która z podanego jako argument pliku YAML wczyta jego zawartość
+# i zwróci w postaci słownika.
