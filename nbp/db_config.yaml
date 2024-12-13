@@ -1,0 +1,5 @@
+db_host: localhost
+db_post: 5432
+db_user: postgres
+db_pass: Password!
+db_name: postgres
