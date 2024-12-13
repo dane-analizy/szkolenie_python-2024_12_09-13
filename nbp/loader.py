@@ -12,6 +12,8 @@ CONFIG_FILE = "db_config_lukasz.yaml"
 LISTA_WALUT = ["EUR", "CHF", "GBP", "USD"]
 ROK = 2024
 
+# rozważ użycie sys.argv do pobrania argumentów z konsoli
+
 # wczytanie konfiguracji związanej z bazą danych
 config = load_config(CONFIG_FILE)
 
