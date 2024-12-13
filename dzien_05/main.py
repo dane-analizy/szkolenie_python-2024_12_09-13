@@ -21,17 +21,18 @@
 # Napisz funkcję load_config(), która z podanego jako argument pliku YAML wczyta jego zawartość
 # i zwróci w postaci słownika.
 
+from pathlib import Path
+
 # zainstaluj potrzebne pakiety:
 # pip install PyYAML SQLAlchemy psycopg2
-import yaml 
-from pathlib import  Path
+import yaml
 
 # importy dla sqlalchemy:
 from sqlalchemy import create_engine, text
 
-
 # CONFIG_FILE = "db_config.yaml"
 CONFIG_FILE = "db_config_lukasz.yaml"
+
 
 def load_config(nazwa_pliku, enc="utf-8"):
     if not Path(nazwa_pliku).exists():
@@ -41,6 +42,7 @@ def load_config(nazwa_pliku, enc="utf-8"):
         config = yaml.safe_load(p)
         return config
     return {}
+
 
 config = load_config(CONFIG_FILE)
 # print(config)
@@ -57,15 +59,27 @@ db_connection = db_engine.connect()
 # print(db_connection)
 
 # wykonujemy zapytanie SQLowe:
-results = db_connection.execute(text("SELECT * FROM players;"))
+results = db_connection.execute(text("SELECT * FROM players "))
+
+# lista nazw kolumn:
+kolumny = list(results.keys())
+# print(kolumny)
 
 # wynikiem jest kursor
-print(results)
+# print(results)
+
+# zapisanie rezultatów do listy
+# results_list = results.all()
 
 # wyświetlamy kolejne rekordy z kursora
-for i, r in enumerate(results):
-    print(f"Rekord {i}:")
-    print(r, end="\n\n")
+# for i, r in enumerate(results):
+#     print(f"Rekord {i}:")
+#     print(r, end="\n\n")
+
+for record in results:
+    slownik = {k: r for k, r in zip(kolumny, record)}
+    print(slownik)
 
 
+# rozłączenie od bazy
 db_connection.close()
